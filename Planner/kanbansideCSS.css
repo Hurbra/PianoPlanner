@@ -5,7 +5,7 @@ body{
 
 }
 
-
+/* Container (main)*/
 .container {
 
     position: relative;
@@ -14,6 +14,118 @@ body{
     z-index: 2;
 }
 
+
+/* --- OVERSKRIFT --- */
+
+/* Container for cardsTitle*/
+.cardsTitleContainer {
+    width: 260px;
+    height: 80px;
+    position: absolute;
+}
+
+/* Tittel ovenfor kortene */
+.cardsTitle {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    z-index: 100;
+
+}
+
+/* Tittel 1 - Planned */
+#cardsTitleContainer1 {
+    top: 0;
+    left: 0;
+    background-color: #AEC0B2;
+}
+
+#cardsTitle1 {
+    top: 5px;
+    left: 5px;
+    background-color: mintcream;
+}
+
+#planned {
+    bottom: 20px;
+    left: 55px;
+    Color: #7f8f85;
+    font-size: xx-large;
+    position: relative;
+}
+
+/* Tittel 2 - Assistance */
+#cardsTitleContainer2 {
+    top: 0;
+    left: 300px;
+    background-color: #AEC0B2;
+}
+
+#cardsTitle2 {
+    top: 5px;
+    left: 5px;
+    background-color: mintcream;
+}
+
+#assistance {
+    bottom: 20px;
+    left: 30px;
+    Color: #7f8f85;
+    font-size: xx-large;
+    position: relative;
+}
+
+/* Tittel 3 - In progress */
+#cardsTitleContainer3 {
+    top: 0;
+    left: 600px;
+    background-color: #AEC0B2;
+}
+
+#cardsTitle3 {
+    top: 5px;
+    left: 5px;
+    background-color: mintcream;
+}
+
+#inProgress {
+    bottom: 20px;
+    left: 25px;
+    Color: #7f8f85;
+    font-size: xx-large;
+    position: relative;
+}
+
+/* Tittel 4 - Finished */
+#cardsTitleContainer4 {
+    top: 0;
+    left: 900px;
+    background-color: #AEC0B2;
+}
+
+#cardsTitle4 {
+    top: 5px;
+    left: 5px;
+    background-color: mintcream;
+}
+
+#finished {
+    bottom: 20px;
+    left: 55px;
+    Color: #7f8f85;
+    font-size: xx-large;
+    position: relative;
+}
+
+
+
+/* --- SLUTT PÅ OVERSKRIFT --- */
+
+
+
+/* --- KORTBLOKK, KORT OG KNAPP --- */
+
+/* Kortblokk */
 .cardBlock {
     height: 350px;
     width: 260px;
@@ -22,6 +134,7 @@ body{
 
 }
 
+/* Kort */
 .card {
     border-radius: 5%;
     height: 150px;
@@ -31,6 +144,7 @@ body{
 
 }
 
+/* Legg til et nytt kort */
 .addNewCard {
     border: none;
     background-color: inherit;
@@ -46,6 +160,7 @@ body{
     text-decoration: none;
     overflow: hidden;
 }
+
 /* Animasjoner til button addNewCard*/
 .addNewCard:after {
     content: "";
@@ -66,14 +181,14 @@ body{
     opacity: 1;
     transition: 0s
 }
-
+/* -----------------------------------*/
 
 
 /* BLOCKK 1 */
 #cardBlock1 {
     left: 0;
-    top: 0;
-    background-color: #AEECB5;
+    top: 120px;
+    background-color: #B5D9E8;
 }
 
 
@@ -105,18 +220,14 @@ body{
     left: 5px;
     top: 315px;
 }
-
-
-
-
 /* ------------ */
 
 
 /* BLOCKK 2 */
 #cardBlock2 {
     left: 300px;
-    top: 0;
-    background-color: #B5D9E8;
+    top: 120px;
+    background-color: #FFA49A;
 }
 
 
@@ -145,20 +256,17 @@ body{
 #addNewCard2 {
     height: 30px;
     width: 250px;
-    left: 50px;
+    left: 5px;
     top: 315px;
 }
-
-
 /* --- */
-
 
 
 /* BLOCKK 3 */
 #cardBlock3 {
     left: 600px;
-    top: 0;
-    background-color: #FFA49A;
+    top: 120px;
+    background-color: #F8FFB9;
 }
 
 
@@ -187,19 +295,17 @@ body{
 #addNewCard3 {
     height: 30px;
     width: 250px;
-    left: 100px;
+    left: 5px;
     top: 315px;
 }
-
-
 /* --- */
 
 
 /* BLOCKK 4 */
 #cardBlock4 {
     left: 900px;
-    top: 0;
-    background-color: #F8FFB9;
+    top: 120px;
+    background-color: #AEECB5;
 }
 
 
@@ -228,13 +334,7 @@ body{
 #addNewCard4 {
     height: 30px;
     width: 250px;
-    left: 150px;
+    left: 5px;
     top: 315px;
 }
-
-
-/* --- */
-
-
-
-
+/* --- SLUTT PÅ KORTBLOKK, KORT OG KNAPP --- */
