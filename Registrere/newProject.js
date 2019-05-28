@@ -8,3 +8,18 @@ function addLi(){
         liNode.appendChild(textNode);
         listNode.appendChild(liNode);
 }
+
+
+function addName(){
+    var nameValue = document.getElementById("textBox1").value,
+        nameNode = document.getElementById("listedPname"),
+        liNameNode = document.createElement("LI"),
+        textNameNode = document.createTextNode(nameValue);
+    
+        liNameNode.appendChild(textNameNode);
+        nameNode.appendChild(liNameNode);
+}
+
+function disable() {
+  document.getElementById('btnSearch').disabled = 'disabled';
+}

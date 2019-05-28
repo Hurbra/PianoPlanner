@@ -2,6 +2,7 @@
 <html lang = "en">
     <head>
     <link rel=stylesheet type="text/css" href="newProject.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <meta charset = "UTF-8">
     <title>Registrer nytt prosjekt</title>
     </head>
@@ -10,28 +11,40 @@
         <div id="mainContainer">
             <div id="logo">LOGO</div>
             
-            <div class="inputBox" id="inputBox1">
-                <fieldset>
-                <legend><h2 id="name">Add project name</h2></legend>
-                <input type="text" class="textBox" id="textBox1" value="Add text here"/>
-                <input type="button" class="submitButton" id="submitButton1" value="Add">
-                </fieldset>
-            </div>
+            <div id="boxContainer">
+                
+                <div id="gettingStartedText">
+                    <h1>Lets get you started...</h1>
+                </div>
+                
+                <div id="seperationWall"></div>
             
-            <div class="inputBox" id="inputBox2">
-                <fieldset>
-                <legend><h2 id="userInput">Add users</h2></legend>
-                <input type="text" class="textBox" id="textBox2" value="Add text here"/>
-                <button onclick="addLi()" id="addUserButton">Add</button>
-                </fieldset>
-            </div>
+                
+                <div class="inputBox" id="inputBox1">
+                    <h2 id="name">Add project name</h2>
+                    <input type="text" class="textBox" id="textBox1" value="Projectname"/>
+                    <button onclick="addName()" id="addProjectName" class="addButton">Add</button>
+                </div>
+            
+                <div class="inputBox" id="inputBox2">
+                    <h2 id="userInput">Add users</h2>
+                    <input type="text" class="textBox" id="textBox2" value="Add users"/>
+                    <button onclick="addLi()" id="addUserButton" class="addButton">Add</button>
+                </div>
+                
+                <div id="outputName">
+                    <h2 id="projectName">Project Name</h2>
+                    <ul id="listedPname">
+                    </ul>
+                </div>
             
             
-            <div class="outputUser" id="outputUser1">
-                <h2 id="registeredUsers">Users:</h2>
-                <ul id='listUsers'>
-                        
-                </ul>
+                <div class="outputUser" id="outputUser1">
+                    <h2 id="registeredUsers">Users:</h2>
+                    <ul id='listUsers'>
+                    </ul>
+                </div>
+            
             </div>
         
         </div>
