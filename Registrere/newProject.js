@@ -19,7 +19,3 @@ function addName(){
         liNameNode.appendChild(textNameNode);
         nameNode.appendChild(liNameNode);
 }
-
-function disable() {
-  document.getElementById('btnSearch').disabled = 'disabled';
-}
