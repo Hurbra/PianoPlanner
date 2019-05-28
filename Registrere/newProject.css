@@ -1,0 +1,70 @@
+html, body{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+#mainContainer{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    position: absolute;
+    margin: 1px; 
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    top: 5%;
+}
+
+.inputBox{
+    position: absolute;
+    font-size: 30px;
+    width: 40%;
+}
+
+#inputBox1{
+    top: 20%;
+    left: 5%;
+}
+
+#inputBox2{
+    top: 50%;
+    left: 5%;
+}
+
+.textBox{
+    position: absolute;
+    height: 30%;
+    font-size: 60%;
+    top: 80%;
+    width: 80%;
+}
+
+
+.submitButton, #addUserButton{
+    position: absolute;
+    left: 85%;
+    height: 33.5%;
+    top: 80%;
+}
+
+#outputUser1{
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    right: 15%;
+}
+
+#listUsers{
+    position: absolute;
+    
+}

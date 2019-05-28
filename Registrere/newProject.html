@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+    <link rel=stylesheet type="text/css" href="newProject.css">
+    <meta charset = "UTF-8">
+    <title>Registrer nytt prosjekt</title>
+    </head>
+    
+    <body>
+        <div id="mainContainer">
+            <div id="logo">LOGO</div>
+            
+            <div class="inputBox" id="inputBox1">
+                <fieldset>
+                <legend><h2 id="name">Add project name</h2></legend>
+                <input type="text" class="textBox" id="textBox1" value="Add text here"/>
+                <input type="button" class="submitButton" id="submitButton1" value="Add">
+                </fieldset>
+            </div>
+            
+            <div class="inputBox" id="inputBox2">
+                <fieldset>
+                <legend><h2 id="userInput">Add users</h2></legend>
+                <input type="text" class="textBox" id="textBox2" value="Add text here"/>
+                <button onclick="addLi()" id="addUserButton">Add</button>
+                </fieldset>
+            </div>
+            
+            
+            <div class="outputUser" id="outputUser1">
+                <h2 id="registeredUsers">Users:</h2>
+                <ul id='listUsers'>
+                        
+                </ul>
+            </div>
+        
+        </div>
+        
+        
+    
+    <script src="newProject.js"></script>
+    </body>
+</html>
