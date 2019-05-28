@@ -1,0 +1,24 @@
+@charset "UTF-8"; 
+
+#index {
+    background-color: #70D3AD;
+} 
+
+#customButton {
+    padding: 10px;
+    color: white;
+    background-color: #70D3AD;
+    border: 1px solid #70D3AD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#customButton:hover {
+    background-color: #B6E29A
+}
+
+#custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+}
