@@ -19,3 +19,12 @@ function addName(){
         liNameNode.appendChild(textNameNode);
         nameNode.appendChild(liNameNode);
 }
+
+
+function removeAll1(){
+    document.getElementById("listUsers").innerHTML = "";
+}
+
+function removeAll(){
+    document.getElementById("listedPname").innerHTML = "";
+}

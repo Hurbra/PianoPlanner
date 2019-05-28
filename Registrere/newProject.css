@@ -74,7 +74,23 @@ body{
     width: 10%;
     top: 89%;
     border-radius: 20px; 
+    border: 1px solid black;
     background-color: #dddfe0;
+}
+
+.removeButton{
+    position: absolute;
+    border-radius: 20px;
+}
+
+#removeButton1{
+    top: 120px;
+    left: 30px; 
+}
+
+#removeButton2{
+    top: 242px;
+    left: 30px;
 }
 
 #outputUser1{
@@ -110,6 +126,7 @@ input[type=text]{
     padding: 1px 10px;
     box-sizing: border-box;
     border-radius: 20px; 
+    border: 1px solid black; 
     color: #747270;
 }
 
@@ -120,18 +137,26 @@ input[type=text]:focus{
 #listUsers{
     position: absolute;
     background: #F2F2E8;
-    width: 100px;
+    width: 130px;
     height: 150px; 
     overflow: auto;
     top: 70px;
+    left: -20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
 }
 
 #listedPname{
     position: absolute;
     top: 70px;
-    width: 200px;
+    left: -20px;
+    width: 130px;
     height: 30px;
+    border: 1px solid black;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
 }
 
 
@@ -163,8 +188,8 @@ input[type=text]:focus{
 
 #submit{
     position: absolute;
-    bottom: 50px;
-    left: 230px;
+    bottom: 15px;
+    left: 735px;
 }
 
 input[type=submit]{
@@ -172,6 +197,7 @@ input[type=submit]{
     height: 50px;
     border-radius: 20px; 
     background-color: #dddfe0;
+    border: 1px solid black; 
 }
 
 .curlyImg{
