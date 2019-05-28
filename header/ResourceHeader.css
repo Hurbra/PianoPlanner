@@ -1,13 +1,13 @@
 @import "allHeaders.css";
 
 /* Planner header start */
-.plannerHeaderContainer {
+.resourceHeaderContainer {
     grid-column: 1 / span 6;
     width: 100%;
     height: 100px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 65% 35%;
+    grid-template-columns: 33.33% 33.33% 33.34%;
+    grid-template-rows: 100%;
 }
 
 .allCategories {
@@ -20,21 +20,6 @@
     text-align: center;
 }
 
-.planned {
-    background-color: #b5d9e8;
-}
-
-.help {
-    background-color: #ffa49a;
-}
-
-.inProgress {
-    background-color: #f8ffb9;
-}
-
-.finished {
-    background-color: #aeecb6;
-}
 /* Planner header end */
 
 /* Users all headers start */
@@ -100,7 +85,7 @@
     background-color: #b5d9e8;
 }
 
-.userHelp {
+.userAssistance {
     background-color: #ffa49a;
 }
 
