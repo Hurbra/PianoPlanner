@@ -1,0 +1,240 @@
+
+
+body{
+    background-color: lightgrey;
+
+}
+
+
+.container {
+
+    position: relative;
+    height: 750px;
+    width: 1502px;
+    z-index: 2;
+}
+
+.cardBlock {
+    height: 350px;
+    width: 260px;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.card {
+    border-radius: 5%;
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    z-index: 4;
+
+}
+
+.addNewCard {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 10000 !important;
+    text-align: -moz-center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+/* Animasjoner til button addNewCard*/
+.addNewCard:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.addNewCard:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+/* BLOCKK 1 */
+#cardBlock1 {
+    left: 0;
+    top: 0;
+    background-color: #AEECB5;
+}
+
+
+/* Kort Vertical 1 og 2, Horizontal */
+#cardV1-H1 {
+    left: 5px;
+    top: 5px;
+    background-color: mintcream;
+}
+
+#cardV2-H1 {
+    left: 5px;
+    top: 160px;
+    background-color: mintcream;
+}
+
+
+/* addNewCard1 - button */
+#addNewCard1:hover {
+    background: #AEC0B2;
+    color: #F8FFB9;
+    border-radius: 50%;
+}
+
+
+#addNewCard1 {
+    height: 30px;
+    width: 250px;
+    left: 5px;
+    top: 315px;
+}
+
+
+
+
+/* ------------ */
+
+
+/* BLOCKK 2 */
+#cardBlock2 {
+    left: 300px;
+    top: 0;
+    background-color: #B5D9E8;
+}
+
+
+/* Kort Vertical 1 og 2, Horizontal */
+#cardV1-H2 {
+    left: 5px;
+    top: 5px;
+    background-color: mintcream;
+}
+
+#cardV2-H2 {
+    left: 5px;
+    top: 160px;
+    background-color: mintcream;
+}
+
+
+/* addNewCard2 */
+#addNewCard2:hover {
+    background: #AEC0B2;
+    color: #AEECB6;
+    border-radius: 50%;
+}
+
+
+#addNewCard2 {
+    height: 30px;
+    width: 250px;
+    left: 50px;
+    top: 315px;
+}
+
+
+/* --- */
+
+
+
+/* BLOCKK 3 */
+#cardBlock3 {
+    left: 600px;
+    top: 0;
+    background-color: #FFA49A;
+}
+
+
+/* Kort Vertical 1 og 2, Horizontal */
+#cardV1-H3 {
+    left: 5px;
+    top: 5px;
+    background-color: mintcream;
+}
+
+#cardV2-H3 {
+    left: 5px;
+    top: 160px;
+    background-color: mintcream;
+}
+
+
+/* addNewCard3 */
+#addNewCard3:hover {
+    background: #AEC0B2;
+    color: #B5D9E8;
+    border-radius: 50%;
+}
+
+
+#addNewCard3 {
+    height: 30px;
+    width: 250px;
+    left: 100px;
+    top: 315px;
+}
+
+
+/* --- */
+
+
+/* BLOCKK 4 */
+#cardBlock4 {
+    left: 900px;
+    top: 0;
+    background-color: #F8FFB9;
+}
+
+
+/* Kort Vertical 1 og 2, Horizontal */
+#cardV1-H4 {
+    left: 5px;
+    top: 5px;
+    background-color: mintcream;
+}
+
+#cardV2-H4 {
+    left: 5px;
+    top: 160px;
+    background-color: mintcream;
+}
+
+
+/* addNewCard4 */
+#addNewCard4:hover {
+    background: #AEC0B2;
+    color: #FFA49A  ;
+    border-radius: 50%;
+}
+
+
+#addNewCard4 {
+    height: 30px;
+    width: 250px;
+    left: 150px;
+    top: 315px;
+}
+
+
+/* --- */
+
+
+
+
