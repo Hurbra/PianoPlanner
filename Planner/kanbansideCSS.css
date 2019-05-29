@@ -1,5 +1,4 @@
 
-
 body{
     background-color: lightgrey;
 
@@ -243,6 +242,14 @@ body{
     top: 160px;
     background-color: mintcream;
 }
+
+#cardV2-H2 {
+    left: 5px;
+    top: 160px;
+    background-color: mintcream;
+}
+
+
 
 
 /* addNewCard2 */
