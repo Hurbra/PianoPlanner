@@ -1,12 +1,12 @@
 
 function newCardFunction1() {
 	
-	alert("I funksjon");
+	//alert("I funksjon");
 	//
 	let newCard1 = document.createElement("div");
-	let node = document.createTextNode("This is new.");
+	//let node = document.createTextNode("This is new.");
 	
-	newCard1.appendChild(node);
+	//newCard1.appendChild(node);
 	
 	let cardBlock1 = document.getElementById("cardBlock1");
 	cardBlock1.appendChild(newCard1);
@@ -25,20 +25,28 @@ function newCardFunction1() {
 	let newCardId1 = "cardV" + newCardId + "-H1";
 	
 	newCard1.id = newCardId1;
+	console.log(newCardId);
 	console.log(newCard1);
 	
-	
-	document.getElementById("cardV3-H1").style.color = "mintcream";
-	document.getElementById("cardV3-H1").style.height = "150px";
-	document.getElementById("cardV3-H1").style.width = "250px";
-	
-	
-	// Get the reference node
-	var referenceNode = document.querySelector('#cardBlock1');
-
-	// Insert the new node before the reference node
-	referenceNode.after(newCard1);
-	
+	if(newCardId === 3) {
+		document.getElementById("cardV3-H1").style.backgroundColor = "mintcream";
+		document.getElementById("cardV3-H1").style.height = "150px";
+		document.getElementById("cardV3-H1").style.width = "250px";
+		document.getElementById("cardV3-H1").style.top = "315px";
+		document.getElementById("cardV3-H1").style.left = "5px";
+		document.getElementById("cardBlock1").style.height = "510px";
+		document.getElementById("addNewCard1").style.top = "470px";
+		
+		
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard1');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard1);
+	}
 	
 	
 	//Dytte ned "add card"-knappen, flytte
