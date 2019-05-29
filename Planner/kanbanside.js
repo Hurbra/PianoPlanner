@@ -26,9 +26,10 @@ function newCardFunction1() {
 	let newCardId1 = "cardV" + newCardId + "-H1";
 	
 	newCard1.id = newCardId1;
-	console.log(newCardId);
+	console.log("Blokk 1, kort nr: " + newCardId);
 	console.log(newCard1);
 	
+	//Kort nr 3
 	if(newCardId === 3) {
 		document.getElementById("cardV3-H1").style.backgroundColor = "mintcream";
 		document.getElementById("cardV3-H1").style.height = "150px";
@@ -48,7 +49,46 @@ function newCardFunction1() {
 		// Insert the new node before the reference node
 		referenceNode.before(newCard1);
 	}
-	
+	//Kort nr 4
+	else if(newCardId === 4) {
+		document.getElementById("cardV4-H1").style.backgroundColor = "mintcream";
+		document.getElementById("cardV4-H1").style.height = "150px";
+		document.getElementById("cardV4-H1").style.width = "250px";
+		document.getElementById("cardV4-H1").style.top = "470px";
+		document.getElementById("cardV4-H1").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock1").style.height = "665px";
+		document.getElementById("addNewCard1").style.top = "625px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard1');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard1);
+	}
+	//Kort nr 5
+	else if(newCardId === 5) {
+		document.getElementById("cardV5-H1").style.backgroundColor = "mintcream";
+		document.getElementById("cardV5-H1").style.height = "150px";
+		document.getElementById("cardV5-H1").style.width = "250px";
+		document.getElementById("cardV5-H1").style.top = "625px";
+		document.getElementById("cardV5-H1").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock1").style.height = "820px";
+		document.getElementById("addNewCard1").style.top = "780px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard1');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard1);
+	}
 }
 
 //----------------------------------------------------------------
@@ -84,9 +124,10 @@ function newCardFunction2() {
 	let newCardId2 = "cardV" + newCardId + "-H2";
 	
 	newCard2.id = newCardId2;
-	console.log(newCardId);
+	console.log("Blokk 2, kort nr: " + newCardId);
 	console.log(newCard2);
 	
+	//Kort nr 3
 	if(newCardId === 3) {
 		document.getElementById("cardV3-H2").style.backgroundColor = "mintcream";
 		document.getElementById("cardV3-H2").style.height = "150px";
@@ -106,7 +147,41 @@ function newCardFunction2() {
 		// Insert the new node before the reference node
 		referenceNode.before(newCard2);
 	}
+	//Kort nr 4
+	else if(newCardId === 4) {
+		document.getElementById("cardV4-H2").style.backgroundColor = "mintcream";
+		document.getElementById("cardV4-H2").style.height = "150px";
+		document.getElementById("cardV4-H2").style.width = "250px";
+		document.getElementById("cardV4-H2").style.top = "470px";
+		document.getElementById("cardV4-H2").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock2").style.height = "665px";
+		document.getElementById("addNewCard2").style.top = "625px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard2');
 	
+		referenceNode.before(newCard2);
+	}
+	//Kort nr 5
+	else if(newCardId === 5) {
+		document.getElementById("cardV5-H2").style.backgroundColor = "mintcream";
+		document.getElementById("cardV5-H2").style.height = "150px";
+		document.getElementById("cardV5-H2").style.width = "250px";
+		document.getElementById("cardV5-H2").style.top = "625px";
+		document.getElementById("cardV5-H2").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock2").style.height = "820px";
+		document.getElementById("addNewCard2").style.top = "780px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard2');
+		
+		
+		referenceNode.before(newCard2);
+	}
 }
 
 //----------------------------------------------------------------
@@ -141,9 +216,10 @@ function newCardFunction3() {
 	let newCardId3 = "cardV" + newCardId + "-H3";
 	
 	newCard3.id = newCardId3;
-	console.log(newCardId);
+	console.log("Blokk 3, kort nr: " + newCardId);
 	console.log(newCard3);
 	
+	//Kort nr 3
 	if(newCardId === 3) {
 		document.getElementById("cardV3-H3").style.backgroundColor = "mintcream";
 		document.getElementById("cardV3-H3").style.height = "150px";
@@ -163,7 +239,46 @@ function newCardFunction3() {
 		// Insert the new node before the reference node
 		referenceNode.before(newCard3);
 	}
-	
+	//Kort nr 4
+	else if(newCardId === 4) {
+		document.getElementById("cardV4-H3").style.backgroundColor = "mintcream";
+		document.getElementById("cardV4-H3").style.height = "150px";
+		document.getElementById("cardV4-H3").style.width = "250px";
+		document.getElementById("cardV4-H3").style.top = "470px";
+		document.getElementById("cardV4-H3").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock3").style.height = "665px";
+		document.getElementById("addNewCard3").style.top = "625px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard3');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard3);
+	}
+	//Kort nr 5
+	else if(newCardId === 5) {
+		document.getElementById("cardV5-H3").style.backgroundColor = "mintcream";
+		document.getElementById("cardV5-H3").style.height = "150px";
+		document.getElementById("cardV5-H3").style.width = "250px";
+		document.getElementById("cardV5-H3").style.top = "625px";
+		document.getElementById("cardV5-H3").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock3").style.height = "820px";
+		document.getElementById("addNewCard3").style.top = "780px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard3');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard3);
+	}
 	
 }
 
@@ -172,7 +287,7 @@ function newCardFunction3() {
 
 
 
-//Blokk 3 ---
+//Blokk 4 ---
 
 function newCardFunction4() {
 	
@@ -200,9 +315,9 @@ function newCardFunction4() {
 	let newCardId4 = "cardV" + newCardId + "-H4";
 	
 	newCard4.id = newCardId4;
-	console.log(newCardId);
+	console.log("Blokk 4, kort nr: " + newCardId);
 	console.log(newCard4);
-	
+	//Kort nr 3
 	if(newCardId === 3) {
 		document.getElementById("cardV3-H4").style.backgroundColor = "mintcream";
 		document.getElementById("cardV3-H4").style.height = "150px";
@@ -213,6 +328,46 @@ function newCardFunction4() {
 		//det nye kortet under det forrige og forlenge bolken
 		document.getElementById("cardBlock4").style.height = "510px";
 		document.getElementById("addNewCard4").style.top = "470px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard4');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard4);
+	}
+	//Kort nr 4
+	else if(newCardId === 4) {
+		document.getElementById("cardV4-H4").style.backgroundColor = "mintcream";
+		document.getElementById("cardV4-H4").style.height = "150px";
+		document.getElementById("cardV4-H4").style.width = "250px";
+		document.getElementById("cardV4-H4").style.top = "470px";
+		document.getElementById("cardV4-H4").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock4").style.height = "665px";
+		document.getElementById("addNewCard4").style.top = "625px";
+		
+		// Get the reference node
+		var referenceNode = document.querySelector('#addNewCard4');
+		//var card2 = document.getElementById("cardV2-H1");
+		
+		//card2.insertAfter(newCard1, card2.nextSibling);
+		// Insert the new node before the reference node
+		referenceNode.before(newCard4);
+	}
+	//Kort nr 5
+	else if(newCardId === 5) {
+		document.getElementById("cardV5-H4").style.backgroundColor = "mintcream";
+		document.getElementById("cardV5-H4").style.height = "150px";
+		document.getElementById("cardV5-H4").style.width = "250px";
+		document.getElementById("cardV5-H4").style.top = "625px";
+		document.getElementById("cardV5-H4").style.left = "5px";
+		//Dytte ned "add card"-knappen, flytte
+		//det nye kortet under det forrige og forlenge bolken
+		document.getElementById("cardBlock4").style.height = "820px";
+		document.getElementById("addNewCard4").style.top = "780px";
 		
 		// Get the reference node
 		var referenceNode = document.querySelector('#addNewCard4');
