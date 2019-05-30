@@ -4,7 +4,7 @@
     <link rel=stylesheet type="text/css" href="newProject.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <meta charset = "UTF-8">
-    <title>Registrer nytt prosjekt</title>
+    <title>Register new project</title>
     </head>
     
     <body>
@@ -37,19 +37,19 @@
                 
                 <div class="inputBox" id="inputBox1">
                     <h2 id="name">Add project name</h2>
-                    <input type="text" class="textBox" id="textBox1" value="Projectname"/>
+                    <input type="text" class="textBox" id="textBox1" placeholder="Projectname"/>
                     <button onclick="addName()" id="addProjectName" class="addButton">Add</button>
                 </div>
             
                 <div class="inputBox" id="inputBox2">
                     <h2 id="userInput">Add users</h2>
-                    <input type="text" class="textBox" id="textBox2" value="Add users"/>
+                    <input type="text" class="textBox" id="textBox2" placeholder="Add users"/>
                     <button onclick="addLi()" id="addUserButton" class="addButton">Add</button>
                 </div>
                 
                 <div id="outputName">
                     <h2 id="projectName">Project Name</h2>
-                    <input type="button" value="Remove All" id="removeButton1" class="removeButton" onclick="removeAll()">
+                    <input type="button" value="Remove" id="removeButton1" class="removeButton" onclick="removeAll()">
                     <ul id="listedPname">
                     </ul>
                 </div>

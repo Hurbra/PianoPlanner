@@ -21,6 +21,7 @@ function addName(){
 }
 
 
+
 function removeAll1(){
     document.getElementById("listUsers").innerHTML = "";
 }
@@ -28,3 +29,4 @@ function removeAll1(){
 function removeAll(){
     document.getElementById("listedPname").innerHTML = "";
 }
+

@@ -11,8 +11,6 @@ body{
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
     background-image: linear-gradient(#E1EAD9, #7F8F85);
-    
-    
 }
 
 #logo{
@@ -80,16 +78,18 @@ body{
 
 .removeButton{
     position: absolute;
+    border: 1px solid black; 
     border-radius: 20px;
+    background-color: #dddfe0;
 }
 
 #removeButton1{
-    top: 120px;
-    left: 30px; 
+    top: 125px;
+    left: 40px; 
 }
 
 #removeButton2{
-    top: 242px;
+    top: 245px;
     left: 30px;
 }
 
@@ -203,7 +203,7 @@ input[type=submit]{
 .curlyImg{
     position: absolute;
     height: 20px;
-    opacity: 0.5; 
+    opacity: 0.7; 
 }
 
 #curlyRight1{
