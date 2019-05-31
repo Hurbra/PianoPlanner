@@ -1,16 +1,19 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vw;
+    background-image: linear-gradient(#E1EAD9, #7F8F85);
+    background-repeat: no-repeat;
 }
 
 #mainContainer{
     position: relative;
+    display: flex;
     width: 1325px;
     height: 768px;
     margin: auto;
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
-    background-image: linear-gradient(#E1EAD9, #7F8F85);
 }
 
 #logo{
@@ -23,7 +26,9 @@ body{
 }
 
 #boxContainer{
-    position: relative;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
     margin: auto;
     padding: 0;
     display: inline-block;
