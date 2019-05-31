@@ -1,5 +1,4 @@
 
-
 body{
     background-color: lightgrey;
 
@@ -127,8 +126,7 @@ body{
 
 /* Kortblokk */
 .cardBlock {
-    height: 350px;
-    width: 260px;
+
     position: absolute;
     z-index: 3;
 
@@ -188,6 +186,8 @@ body{
 #cardBlock1 {
     left: 0;
     top: 120px;
+    height: 350px;
+    width: 260px;
     background-color: #B5D9E8;
 }
 
@@ -219,7 +219,7 @@ body{
     width: 250px;
     left: 5px;
     top: 315px;
-}
+}  
 /* ------------ */
 
 
@@ -227,6 +227,8 @@ body{
 #cardBlock2 {
     left: 300px;
     top: 120px;
+    height: 350px;
+    width: 260px;
     background-color: #FFA49A;
 }
 
@@ -243,6 +245,14 @@ body{
     top: 160px;
     background-color: mintcream;
 }
+
+#cardV2-H2 {
+    left: 5px;
+    top: 160px;
+    background-color: mintcream;
+}
+
+
 
 
 /* addNewCard2 */
@@ -266,6 +276,8 @@ body{
 #cardBlock3 {
     left: 600px;
     top: 120px;
+    height: 350px;
+    width: 260px;
     background-color: #F8FFB9;
 }
 
@@ -305,6 +317,8 @@ body{
 #cardBlock4 {
     left: 900px;
     top: 120px;
+    height: 350px;
+    width: 260px;
     background-color: #AEECB5;
 }
 
