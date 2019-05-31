@@ -9,7 +9,7 @@ function newCardFunction1() {
 	//let node = document.createTextNode("This is new.");
 	
 	//newCard1.appendChild(node);
-	
+	 
 	let cardBlock1 = document.getElementById("cardBlock1");
 	cardBlock1.appendChild(newCard1);
 	
