@@ -1,0 +1,188 @@
+body, html{
+    margin: 0;
+    overflow: hidden;  
+    background-image: linear-gradient(#E1EAD9, #7F8F85);
+
+}
+.mainWrapper{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    width: 1080px;
+    height: 720px;
+    background-image: linear-gradient(#E1EAD9, #7F8F85);
+    background-repeat: no-repeat;    
+}
+
+.logo{
+    position: absolute;
+    left: 440px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 100px;
+    opacity: 0.5;
+    text-decoration: underline;
+    
+}
+
+.yourProjects{
+    position: absolute;
+    left: 380px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 70px;
+    opacity: 0.5;
+    text-decoration: underline;
+    top: 150px;
+    
+}
+
+.loginBox{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 2px solid #F2F2E8;
+    background-color: #F2F2E8;
+    padding: 3px;
+    margin: 8px;
+    height: 30px;
+    width: 133px;
+    border-radius: 20px;
+}
+
+.login{
+    position: absolute;
+    top: 16px;
+    right: 35px;
+    font-size: 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    opacity: 0.6;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+.buttonWrapper1{
+    position: absolute;
+    top: 280px;
+    left: 230px;
+}
+
+.buttonWrapper2{
+    position: absolute;
+    top: 280px;
+    left: 230px;
+    top: 430px;
+
+}
+
+.projectButtons{
+    width: 280px;
+    height: 130px;
+    opacity: 0.6;
+    border: 1px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: "Open Sans Condensed", sans-serif;
+    cursor: pointer;
+
+}
+
+.projectButtons:hover{
+    box-shadow: 5px 10px #888888;
+    
+}
+
+#project1{
+    
+}
+
+#project2{
+    
+}
+
+#project3{
+    
+}
+#project4{
+    
+}
+
+.user{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    
+}
+
+#user1{
+    left: 250px;
+    top: 295px;
+}
+
+#user2{
+    left: 283px;
+    top: 295px;
+}
+
+#user3{
+    left: 316px;
+    top: 295px;
+}
+
+#user4{
+    left: 349px;
+    top: 295px;
+}
+
+#user5{
+    left: 382px;
+    top: 295px;
+}
+
+#user6{
+    left: 415px;
+    top: 295px;
+}
+
+#partyProject{
+    position: absolute;
+    top: 10px;
+    left: 314px;
+    width: 280px;
+    height: 130px;
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
