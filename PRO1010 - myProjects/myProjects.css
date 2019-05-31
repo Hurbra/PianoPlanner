@@ -1,23 +1,24 @@
-body, html{
-    margin: 0;
-    overflow: hidden;  
+body{
     background-image: linear-gradient(#E1EAD9, #7F8F85);
+    background-repeat: no-repeat;
+    height: 100vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 
 }
 .mainWrapper{
     position: relative;
-    overflow: hidden;
-    text-align: center;
+    display: flex;
+    width: 1325px;
+    height: 768px;
     margin: auto;
-    width: 1080px;
-    height: 720px;
-    background-image: linear-gradient(#E1EAD9, #7F8F85);
-    background-repeat: no-repeat;    
+
 }
 
 .logo{
     position: absolute;
-    left: 440px;
+    left: 555px;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 100px;
     opacity: 0.5;
@@ -27,7 +28,7 @@ body, html{
 
 .yourProjects{
     position: absolute;
-    left: 380px;
+    left: 500px;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 70px;
     opacity: 0.5;
@@ -63,13 +64,13 @@ body, html{
 .buttonWrapper1{
     position: absolute;
     top: 280px;
-    left: 230px;
+    left: 345px;
 }
 
 .buttonWrapper2{
     position: absolute;
     top: 280px;
-    left: 230px;
+    left: 345px;
     top: 430px;
 
 }
@@ -116,32 +117,32 @@ body, html{
 }
 
 #user1{
-    left: 250px;
+    left: 360px;
     top: 295px;
 }
 
 #user2{
-    left: 283px;
+    left: 395px;
     top: 295px;
 }
 
 #user3{
-    left: 316px;
+    left: 430px;
     top: 295px;
 }
 
 #user4{
-    left: 349px;
+    left: 465px;
     top: 295px;
 }
 
 #user5{
-    left: 382px;
+    left: 500px;
     top: 295px;
 }
 
 #user6{
-    left: 415px;
+    left: 535px;
     top: 295px;
 }
 
@@ -154,6 +155,81 @@ body, html{
     border-radius: 20px;
     opacity: 0.5;
     z-index: 1;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.showUsers{
+    position: absolute;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 2px;
+    left: 70px;
+    top: 3px;
+    text-decoration-line: underline;
+    border-radius: 20px;
+    
+    
 }
 
 
