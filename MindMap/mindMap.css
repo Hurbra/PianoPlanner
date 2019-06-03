@@ -296,3 +296,14 @@ body{
     }
 }
 
+#removeDevInputButton{
+    position: absolute;
+    left: 40%;
+    bottom: 10px;
+}
+
+#removeDevInputButton2{
+    position: absolute;
+    left: 76%;
+    bottom: 10px;
+}

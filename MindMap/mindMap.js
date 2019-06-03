@@ -60,3 +60,12 @@ input.addEventListener("keyup", function(event) {
      event.currentTarget.value = "";
   }
 });
+
+
+function removeAll(){
+    document.getElementById("showIdea").innerHTML = "";
+}
+
+function removeAll1(){
+    document.getElementById("showIdea1").innerHTML = "";
+}
