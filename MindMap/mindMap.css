@@ -238,29 +238,27 @@ body{
 #movingCircle4{
     width: 150px; 
     height: 150px; 
-    left: -300px; 
+    left: -700px; 
     animation-name: circleLeftToRight1;
     animation-duration: 80s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-delay: 10s;
 }
 
 #movingCircle5{
     width: 150px; 
     height: 150px; 
-    left: -300px; 
+    right: -700px; 
     animation-name: circleRightToLeft2;
     animation-duration: 80s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-delay: 10s;
 }
 
 #movingCircle6{
     width: 100px; 
     height: 100px; 
-    left: -300px; 
+    right: -300px; 
     animation-name: circleRightToLeft2;
     animation-duration: 50s;
     animation-iteration-count: infinite;
@@ -281,7 +279,7 @@ body{
 @keyframes circleRightToLeft1{
     0%{
         right: -700px;
-        top: 100px; 
+        top: -100px; 
     }100%{
         right: 1450px;
         top: 500px; 
@@ -293,7 +291,7 @@ body{
         right: -700px;
         bottom: -300px;
     }100%{
-        right: 1450px;
+        right: 1750px;
         bottom: 400px; 
     }
 }
