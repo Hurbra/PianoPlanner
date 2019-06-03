@@ -233,6 +233,104 @@ input[type=submit]{
     transform: rotateY(180deg);
 }
 
+.movingCircle{
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #5046aa;
+}
+
+#movingCircle1{
+    width: 100px; 
+    height: 100px; 
+    left: -510px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle2{
+    width: 300px; 
+    height: 300px; 
+    right: 1450px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle3{
+    width: 200px; 
+    height: 200px; 
+    left: -500px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+}
+
+#movingCircle4{
+    width: 150px; 
+    height: 150px; 
+    left: -700px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle5{
+    width: 150px; 
+    height: 150px; 
+    right: -700px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle6{
+    width: 100px; 
+    height: 100px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes circleLeftToRight1{
+    0%{
+        left: -700px;
+        top: 100px; 
+    }100%{
+        left: 1450px;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft1{
+    0%{
+        right: -700px;
+        top: -100px; 
+    }100%{
+        right: 1450px;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft2{
+    0%{
+        right: -700px;
+        bottom: -300px;
+    }100%{
+        right: 1750px;
+        bottom: 400px; 
+    }
+}
+
 
 
 
