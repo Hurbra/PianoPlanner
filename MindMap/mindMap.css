@@ -198,15 +198,24 @@ body{
     top: 220px;
 }
 
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 70vw;
+    overflow: hidden;
+}
+
 .movingCircle{
     position: absolute;
     border-radius: 50%; 
     background-color: #5046aa;
+    
 }
 
 #movingCircle1{
-    width: 100px; 
-    height: 100px; 
+    width: 200px; 
+    height: 200px; 
     left: -510px; 
     animation-name: circleLeftToRight1;
     animation-duration: 60s;
@@ -229,15 +238,14 @@ body{
     height: 200px; 
     left: -500px; 
     animation-name: circleRightToLeft1;
-    animation-duration: 70s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-delay: 10s;
 }
 
 #movingCircle4{
-    width: 150px; 
-    height: 150px; 
+    width: 250px; 
+    height: 250px; 
     left: -700px; 
     animation-name: circleLeftToRight1;
     animation-duration: 80s;
@@ -256,22 +264,31 @@ body{
 }
 
 #movingCircle6{
-    width: 100px; 
-    height: 100px; 
+    width: 300px; 
+    height: 300px; 
     right: -300px; 
     animation-name: circleRightToLeft2;
-    animation-duration: 50s;
+    animation-duration: 90s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
+#movingCircle7{
+    width: 240px; 
+    height: 240px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 110s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
 @keyframes circleLeftToRight1{
     0%{
         left: -700px;
         top: 100px; 
     }100%{
-        left: 1450px;
+        left: 110%;
         top: 500px; 
     }
 }
@@ -281,7 +298,7 @@ body{
         right: -700px;
         top: -100px; 
     }100%{
-        right: 1450px;
+        right: 110%;
         top: 500px; 
     }
 }
@@ -291,7 +308,7 @@ body{
         right: -700px;
         bottom: -300px;
     }100%{
-        right: 1750px;
+        right: 110%;
         bottom: 400px; 
     }
 }
