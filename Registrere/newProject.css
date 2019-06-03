@@ -46,8 +46,9 @@ body{
 
 #gettingStartedText{
     position: absolute;
+    font-family: 'Anton', sans-serif;
     font-size: 15px;
-    left: 20%; 
+    left: 13%; 
     text-decoration: underline;
 }
 
@@ -184,8 +185,9 @@ input[type=text]:focus{
 
 #overviewText{
     position: absolute;
-    width: 200px;
-    left: 675px;
+    font-family: 'Anton', sans-serif;
+    width: 250px;
+    left: 65%;
     font-size: 30px; 
     text-decoration: underline;
     text-decoration-color: #847d7d;
