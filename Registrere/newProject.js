@@ -18,6 +18,7 @@ function addName(){
     
         liNameNode.appendChild(textNameNode);
         nameNode.appendChild(liNameNode);
+    console.log(document.getElementById("listUsers").innerHTML)
 }
 
 
@@ -49,5 +50,5 @@ function removeAll(){
 }
 
 
-//localStorage.setItem("tBox", document.getElementById("textBox1"));
+//localStorage.setItem("tBox", document.getElementById("listUsers").innerHTML);
 
