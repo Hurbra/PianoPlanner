@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #8781bd;
+    background-repeat: no-repeat;
+}
+
+#header{
+    width: 100vw; 
+    height: 120px; 
+    background-color: bisque;
+}
+
+#mainContainer{
+    position: relative;
+    display: flex;
+    width: 1325px;
+    height: 768px;
+    margin: auto;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#boxContainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0;
+    display: inline-block;
+    width: 75%; 
+    height: 75%; 
+    left: 10%;
+    top: 10%; 
+    background-color: #F2F2E8;
+    border-radius: 20px; 
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #3a5532;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#mindHeader1{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: black;
+}
+
+#newField1{
+    position: absolute;
+    top: 100px; 
+    left: 20px; 
+    font-size: 15px; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+#newField2{
+    position: absolute;
+    top: 180px; 
+    left: 20px; 
+    font-size: 15px; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+#newField3{
+    position: absolute;
+    top: 260px; 
+    left: 20px; 
+    font-size: 15px; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+#addButton1{
+    position: absolute;
+    top: 100px; 
+    left: 160px;
+    height: 8%;
+    width: 22%;
+    border-radius: 20px; 
+    border: 1px solid black;
+    background-color: #dddfe0;
+}
+
+#addButton2{
+    position: absolute;
+    top: 180px; 
+    left: 160px;
+    height: 8%;
+    width: 22%;
+    border-radius: 20px; 
+    border: 1px solid black;
+    background-color: #dddfe0;
+}
+
+#addButton3{
+    position: absolute;
+    top: 260px; 
+    left: 160px;
+    height: 8%;
+    width: 22%;
+    border-radius: 20px; 
+    border: 1px solid black;
+    background-color: #dddfe0;
+}
+
+#mindHeaderText{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    color: aliceblue;
+}
+
+#headerLine{
+    position: absolute;
+    width: 100%; 
+    height: 0.5%; 
+    top: 11%; 
+    background-color: white;
+    
+}
+
+#showIdeaName{
+    position: absolute;
+    width: 500px; 
+    height: 100px;
+    top: -60px;
+    text-align: center;
+    font-size: 40px; 
+    overflow: hidden;
+}
+
+#outputIdeaName{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    top: 10px;
+    width: 500px; 
+    height: 100px;
+    left: 370px; 
+    border: 1px solid black; 
+    box-shadow: 10px 10px #8781bd;
+    border-radius: 20px; 
+}
+
+#showIdea, #showIdea1{
+    position: absolute;
+    margin: 2rem;
+    font-size: 30px;
+    
+}
+
+#outputIdea{
+    left: 30%;
+}
+
+#ideaText1, #ideaText2{
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    width: 300px;
+    text-decoration: underline;
+}
+
+#outputIdea1{
+    left: 65%;
+}
+
+.outputBoxes{
+    position: absolute;
+    width: 30%;
+    height: 63%;
+    top: 30%; 
+    border: 1px solid black;  
+    overflow: hidden;
+    box-shadow: 10px 10px #8781bd;
+    border-radius: 20px; 
+}
+
+.inputInfoText{
+    position: absolute;
+    color: white;
+    left: 40px; 
+}
+
+#input1InfoText{
+    top: 60px;
+}
+
+#input2InfoText{
+    top: 140px;
+}
+
+#input3InfoText{
+    top: 220px;
+}
+
+.movingCircle{
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #5046aa;
+}
+
+#movingCircle1{
+    width: 100px; 
+    height: 100px; 
+    left: -510px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle2{
+    width: 300px; 
+    height: 300px; 
+    right: 1450px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle3{
+    width: 200px; 
+    height: 200px; 
+    left: -500px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+}
+
+#movingCircle4{
+    width: 150px; 
+    height: 150px; 
+    left: -300px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+}
+
+#movingCircle5{
+    width: 150px; 
+    height: 150px; 
+    left: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+}
+
+#movingCircle6{
+    width: 100px; 
+    height: 100px; 
+    left: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes circleLeftToRight1{
+    0%{
+        left: -700px;
+        top: 100px; 
+    }100%{
+        left: 1450px;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft1{
+    0%{
+        right: -700px;
+        top: 100px; 
+    }100%{
+        right: 1450px;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft2{
+    0%{
+        right: -700px;
+        bottom: -300px;
+    }100%{
+        right: 1450px;
+        bottom: 400px; 
+    }
+}
+

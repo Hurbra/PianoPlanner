@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+    <link rel=stylesheet type="text/css" href="mindMap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta charset = "UTF-8">
+    <title>MindMap</title>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        <div id="mainContainer">
+            <div id="boxContainer">
+                <div id="mindHeader1">
+                    <h2 id="mindHeaderText">Create idea</h2>
+                    
+                    <p id="input1InfoText" class="inputInfoText">1. Add the name for your idea</p>
+                    <input type="text" id="newField1" placeholder="Add idea name">
+                    <button onclick="addIdeaName()" id="addButton1">Add</button>
+                    
+                    <p id="input2InfoText" class="inputInfoText">2. Add ideas for development</p>
+                    <input type="text" id="newField2" placeholder="Code ideas">
+                    <button onclick="addIdea()" id="addButton2">Add</button>
+                    
+                    <p id="input3InfoText" class="inputInfoText">3. Add ideas for design</p>
+                    <input type="text" id="newField3" placeholder="Design ideas">
+                    <button onclick="addIdea1()" id="addButton3">Add</button>
+                    
+                    <div id="headerLine"></div>
+                    
+                    
+                </div>
+                
+                <div id="outputIdeaName">
+                    <p id="showIdeaName">
+                    </p>
+                </div>
+                
+                <div class="outputBoxes" id="outputIdea">
+                    <p id="ideaText1">Ideas for development: </p>
+                    <ul id="showIdea">
+                    </ul>
+                </div>
+                
+                <div class="outputBoxes" id="outputIdea1">
+                    <p id="ideaText2">Ideas for design: </p>
+                    <ul id="showIdea1">
+                    </ul>
+                </div>
+                
+                    
+                
+                
+            
+            
+            </div>
+            
+            <div id="movingCircle1" class="movingCircle"></div>
+            <div id="movingCircle2" class="movingCircle"></div>
+            <div id="movingCircle3" class="movingCircle"></div>
+            <div id="movingCircle4" class="movingCircle"></div>
+            <div id="movingCircle5" class="movingCircle"></div>
+            <div id="movingCircle6" class="movingCircle"></div>
+            
+        
+        
+        
+        </div>
+    
+    <script src="mindMap.js"></script>
+    </body>
+
+
+</html>
