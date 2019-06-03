@@ -233,6 +233,14 @@ input[type=submit]{
     transform: rotateY(180deg);
 }
 
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 70vw;
+    overflow: hidden;
+}
+
 .movingCircle{
     position: absolute;
     border-radius: 50%; 
