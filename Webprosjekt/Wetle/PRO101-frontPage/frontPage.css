@@ -1,7 +1,7 @@
 
 
 body{
-    background-image: linear-gradient(#E1EAD9, #7F8F85);
+    background-color: #8781bd;
     background-repeat: no-repeat;
     height: 100vw;
     overflow: hidden;
@@ -23,8 +23,9 @@ body{
 
 .login{
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 15%;
+    margin: 0;
+    right: 20%;
     font-size: 15px;
     font-family: "Open Sans Condensed", sans-serif;
     opacity: 0.6;
@@ -35,7 +36,7 @@ body{
 .loginBox{
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 5%;
     border: 2px solid #F2F2E8;
     background-color: #F2F2E8;
     padding: 3px;
@@ -130,6 +131,124 @@ body{
 
 #projectBtn:hover::before{
     height: 0%;
+}
+
+/* Adding floating circles to the background */
+
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 70vw;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.movingCircle{
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #5046aa;
+    
+}
+
+#movingCircle1{
+    width: 200px; 
+    height: 200px; 
+    left: -510px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle2{
+    width: 300px; 
+    height: 300px; 
+    right: 1450px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle3{
+    width: 200px; 
+    height: 200px; 
+    left: -500px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle4{
+    width: 250px; 
+    height: 250px; 
+    left: -700px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle5{
+    width: 150px; 
+    height: 150px; 
+    right: -700px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle6{
+    width: 300px; 
+    height: 300px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle7{
+    width: 240px; 
+    height: 240px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 110s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes circleLeftToRight1{
+    0%{
+        left: -400px;
+        top: 100px; 
+    }100%{
+        left: 110%;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft1{
+    0%{
+        right: -400px;
+        top: -100px; 
+    }100%{
+        right: 110%;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft2{
+    0%{
+        right: -400px;
+        bottom: -300px;
+    }100%{
+        right: 110%;
+        bottom: 1000px; 
+    }
 }
 
 
