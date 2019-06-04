@@ -43,7 +43,7 @@ function dragDrop() {
 	
 	//drop event to allow the element to be dropped into valid targets
 	document.addEventListener('drop', function (e) {
-		//if this element is a drop target, move the item here
+		//if this element is a drop zone, move the item here
 		//then prevent default to allow the action (same as dragover)
 		
 		if(e.target.className === "dropZone") {
@@ -69,8 +69,11 @@ let cardArray = [];
 
 
 let addCardButton = document.getElementById("addCardButton");
+
+//Counter til ID. Til senere bruk
 let counter = 0;
 
+//-----
 addCardButton.addEventListener("click", e => {
 	counter ++;
 	addCard();
@@ -120,15 +123,13 @@ function addCard() {
 			alert("You have to give the card a title. Try again.");
 			return;
 		}*/
-		else { 
+		else {
 			alert("You can only type in numbers and letters. Try again.");
 			counter --;
 			return;
 		}
+		dragDrop();
 	}
-
-	
-	
 	
 	
 	let inputPlusTitle = "Title: " + input;
@@ -137,8 +138,9 @@ function addCard() {
 	
 	let id = "card" + counter;
 	card.id = id;
+	
 	//Add to array:
-	//cardArray.push(card + "" + id);
+	cardArray.push(card + "" + id);
 	
 	
 	let cardNodeID = "ID: " + id;
@@ -151,15 +153,13 @@ function addCard() {
 	card.appendChild(nodeID);
 	drop.appendChild(card);
 	
-	console.log("Nytt kort opprettet: " + card);
+	console.log("Nytt kort opprettet: " + cardNodeID);
 	
 	//console.log(cardArray);
 	
 	dragDrop();
 	
 }
-
-
 //-----
 
 
@@ -208,6 +208,6 @@ function removeCard() {
 	
 	dragDrop();
 }
-
+//-----
 
 
