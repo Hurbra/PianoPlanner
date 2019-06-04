@@ -1,36 +1,4 @@
 
-let addCardButton = document.getElementById("addCardButton");
-
-addCardButton.addEventListener("click", e => {
-	addCard();
-});
-
-
-function addCard(qualifiedName, value) {
-	console.log("I funksjon");
-	let card = document.createElement("li");
-	
-	card.setAttribute("draggable", true);
-	card.className = "card";
-	
-	let drop = document.getElementById("drop1");
-	
-	let nodeP = document.createElement("p");                 // Create a <li> node
-	let input = prompt("Write the title of the card: ");
-	var textNode = document.createTextNode(input);         // Create a text node
-	
-	nodeP.appendChild(textNode);
-	card.appendChild(nodeP);
-	drop.appendChild(card);
-	
-	console.log("Nytt kort opprettet: " + card);
-	
-	dragDrop();
-	
-}
-
-
-dragDrop();
 
 function dragDrop() {
 	
@@ -94,8 +62,106 @@ function dragDrop() {
 	}, false);
 	
 }
+//-----
+
+let cardArray = [];
 
 
+let addCardButton = document.getElementById("addCardButton");
+let counter = 0;
+
+addCardButton.addEventListener("click", e => {
+	counter ++;
+	addCard();
+});
+
+//-----
+let buttonRemove = document.getElementById("buttonRemove");
+
+buttonRemove.addEventListener("click", e => {
+	counter --;
+	removeCard();
+});
+//-----
+
+
+
+function addCard(qualifiedName, value) {
+	
+	console.log("I funksjon");
+	
+	let card = document.createElement("li");
+	let drop = document.getElementById("drop1");
+	card.setAttribute("draggable", true);
+	card.className = "card";
+	
+	// Dobbeltklikk på kortet fører til removeCard():
+	//card.setAttribute("ondblclick", "removeCard();");
+	
+	
+	let nodeP = document.createElement("p");
+	nodeP.className = "pCard";
+	let nodeID = document.createElement("p");
+	nodeID.className = "pCard";
+	let input = prompt("Write the title of the card: ");
+	
+	if(input === null) {
+		alert("You have to give the card a title. Try again.");
+		return;
+	}
+	
+	let inputPlusTitle = "Title: " + input;
+	
+	let textNode = document.createTextNode(inputPlusTitle);         // Create a text node
+	
+	let id = "card" + counter;
+	card.id = id;
+	cardArray.push(card + "" + id);
+	
+	let cardNodeID = "ID: " + id;
+	
+	let textNodeID = document.createTextNode(cardNodeID);
+	
+	console.log(card + "" + id);
+	
+	nodeP.appendChild(textNode);
+	card.appendChild(nodeP);
+	nodeID.appendChild(textNodeID);
+	card.appendChild(nodeID);
+	drop.appendChild(card);
+	
+	console.log(counter);
+	console.log("Nytt kort opprettet: " + card);
+	
+	console.log(cardArray);
+	
+}
+
+
+//-----
+
+
+
+function removeCard(e) {
+	
+	let deleteCardID = prompt("Write the ID of the card you want to delete (e.g. --> card1): ").toLowerCase();
+	let deleteOrNot = prompt("Do you want to delete this card?" +"\nWrite yes or no").toLowerCase();
+	
+	let cardIDOfCard = document.getElementById(deleteCardID);
+	let dropParent = cardIDOfCard.parentNode;
+	
+	if (deleteOrNot === "yes") {
+		dropParent.removeChild(cardIDOfCard);
+	}
+	else if(deleteOrNot === null){
+		return;
+	}
+	else {
+		return;
+	}
+	
+	dragDrop();
+}
 
 
 
