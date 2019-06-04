@@ -2,8 +2,11 @@
 <html lang = "en">
     <head>
     <link rel=stylesheet type="text/css" href="newProject.css">
+        
+        <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da&display=swap" rel="stylesheet">
+        
     <meta name="viewport" content="width=device-width", initial-scale=1.0>
     <meta charset = "UTF-8">
     <title>Register new project</title>
@@ -13,10 +16,13 @@
         <div id="mainContainer">
             <div id="logo">LOGO</div>
             
+            <!-- Container for the whole box -->
             <div id="boxContainer">
                 
-                <img src="forest.jpg" id="forest">
+                <!-- Background image on the left side -->
+                <img src="Bilder/purpleBackground.jpeg" id="backgroundLeft">
                 
+                <!-- Curlybrackets on placed on the side of the headlines -->
                 <img src="Bilder/curlyBracketLeft.png" id="curlyLeft1" class="curlyImg">
                 <img src="Bilder/curlyBracketLeft.png" id="curlyRight1" class="curlyImg">
                 <img src="Bilder/curlyBracketLeft.png" id="curlyLeft2" class="curlyImg">
@@ -26,29 +32,36 @@
                     <h1>Lets get you started</h1>
                 </div>
                 
+                <!-- Vertical line in the middle of the box -->
                 <div id="seperationWall"></div>
                 
                 <div id="projectOverview">
                     <h1 id="overviewText">Project Overview</h1>
                 </div>
                 
+                <!-- The button that submits the info from the input fields and redirects you to the next page, creating the project -->
                 <div id="submit">
                     <a href="newProject2.html"><input type="submit" value="Create"></a>
                 </div>
                 
             
+                <!-- inputfield for the projectname -->
                 <div class="inputBox" id="inputBox1">
                     <h2 id="name">Add project name</h2>
                     <input type="text" class="textBox" id="textBox1" placeholder="Projectname"/>
+                    <!-- add-button for the first input field -->
                     <button onclick="addName()" id="addProjectName" class="addButton">Add</button>
                 </div>
             
+                <!-- inputfield for the users involved -->
                 <div class="inputBox" id="inputBox2">
                     <h2 id="userInput">Add users</h2>
                     <input type="text" class="textBox" id="textBox2" placeholder="Add users"/>
+                    <!-- add-button for the second input field -->
                     <button onclick="addLi()" id="addUserButton" class="addButton">Add</button>
                 </div>
                 
+                <!-- This is the box on the right side where the input fields are displayed. this one is for project name output -->
                 <div id="outputName">
                     <h2 id="projectName">Project Name</h2>
                     <input type="button" value="Remove" id="removeButton1" class="removeButton" onclick="removeAll()">
@@ -57,6 +70,7 @@
                 </div>
             
             
+                <!-- This one is for the username output -->
                 <div class="outputUser" id="outputUser1">
                     <h2 id="registeredUsers">Users:</h2>
                     <input type="button" value="Remove All" id="removeButton2" class="removeButton" onclick="removeAll1()">
@@ -69,6 +83,7 @@
         
         </div>
         
+        <!-- container for the moving circles in the background of the box -->
         <div id="circleContainer">
             <div id="movingCircle1" class="movingCircle"></div>
             <div id="movingCircle2" class="movingCircle"></div>
