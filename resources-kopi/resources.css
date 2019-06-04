@@ -185,6 +185,8 @@ body {
 
 #commentButton{
     position: absolute;
+    background-color: #E59292;
+    color: #B6E29A;
     top: 20%;
     width: 20%;
     height: 10%;
