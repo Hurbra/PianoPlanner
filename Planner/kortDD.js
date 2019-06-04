@@ -1,4 +1,5 @@
 
+
 dragDrop();
 function dragDrop() {
 	
@@ -86,9 +87,9 @@ buttonRemove.addEventListener("click", e => {
 
 
 
-function addCard(qualifiedName, value) {
+function addCard() {
 	
-	console.log("I funksjon");
+	//console.log("I funksjon");
 	
 	let card = document.createElement("li");
 	let drop = document.getElementById("drop1");
@@ -103,12 +104,32 @@ function addCard(qualifiedName, value) {
 	nodeP.className = "pCard";
 	let nodeID = document.createElement("p");
 	nodeID.className = "pCard";
-	let input = prompt("Write the title of the card: ");
 	
-	if(input === null) {
-		alert("You have to give the card a title. Try again.");
-		return;
+	let input = prompt("Write the title of the card: ");
+/*	blockSpecialChar();
+	
+	function blockSpecialChar(e) {
+		let k = e.keyCode;
+		return ((k > 64 && k < 91) || (k > 96 && k < 123) || k === 8   || (k >= 48 && k <= 57));
+	}*/
+	
+	if (input) {
+		if (input.match(/^[0-9a-zA-Z]+$/)) {
+		}
+		/*else if (input === null) {
+			alert("You have to give the card a title. Try again.");
+			return;
+		}*/
+		else { 
+			alert("You can only type in numbers and letters. Try again.");
+			counter --;
+			return;
+		}
 	}
+
+	
+	
+	
 	
 	let inputPlusTitle = "Title: " + input;
 	
@@ -116,13 +137,13 @@ function addCard(qualifiedName, value) {
 	
 	let id = "card" + counter;
 	card.id = id;
-	cardArray.push(card + "" + id);
+	//Add to array:
+	//cardArray.push(card + "" + id);
+	
 	
 	let cardNodeID = "ID: " + id;
 	
 	let textNodeID = document.createTextNode(cardNodeID);
-	
-	console.log(card + "" + id);
 	
 	nodeP.appendChild(textNode);
 	card.appendChild(nodeP);
@@ -130,10 +151,9 @@ function addCard(qualifiedName, value) {
 	card.appendChild(nodeID);
 	drop.appendChild(card);
 	
-	console.log(counter);
 	console.log("Nytt kort opprettet: " + card);
 	
-	console.log(cardArray);
+	//console.log(cardArray);
 	
 	dragDrop();
 	
@@ -144,21 +164,45 @@ function addCard(qualifiedName, value) {
 
 
 
-function removeCard(e) {
+function removeCard() {
 	
-	let deleteCardID = prompt("Write the ID of the card you want to delete (e.g. --> card1): ").toLowerCase();
-	let deleteOrNot = prompt("Do you want to delete this card?" +"\nWrite yes or no").toLowerCase();
-	
-	let cardIDOfCard = document.getElementById(deleteCardID);
-	let dropParent = cardIDOfCard.parentNode;
-	
-	if (deleteOrNot === "yes") {
-		dropParent.removeChild(cardIDOfCard);
-	}
-	else if(deleteOrNot === null){
-		return;
+	if(cardArray.length > 0) {
+		
+		let deleteCardID = prompt("Write the ID of the card you want to delete (e.g. --> card1): ").toLowerCase();
+		if (deleteCardID) {
+			if (deleteCardID.match(/^[0-9a-zA-Z]+$/)) {
+			}
+			/*else if (deleteCardID === null) {
+				alert("You have to write an ID. Try again.");
+				return;
+			}*/
+			else {
+				alert("You can only type in numbers and letters. Try again.");
+				return;
+			}
+		}
+		let deleteOrNot = prompt("Do you want to delete this card?" + "\nWrite yes or no").toLowerCase();
+		
+		let cardIDOfCard = document.getElementById(deleteCardID);
+		let dropParent = cardIDOfCard.parentNode;
+		
+		if (deleteOrNot === "yes") {
+			dropParent.removeChild(cardIDOfCard);
+			
+			//Delete from array
+			/*let searchVar = '[object HTMLLIElement]' + deleteCardID + '';
+			console.log("Search: " + searchVar);
+			cardArray = cardArray.filter(e => e !== '"' + searchVar + '"');
+			console.log(cardArray);*/
+			
+		} else if (deleteOrNot === null) {
+			return;
+		} else {
+			return;
+		}
 	}
 	else {
+		alert("You haven't added any cards yet!");
 		return;
 	}
 	
