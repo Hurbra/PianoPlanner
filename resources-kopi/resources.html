@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewPort" content="width= device-width, initial scale= 1.0">
     <title>Piano | Resources</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="resources.css">
     <script type= "text/javascript" src="/js/js.js"></script>
 
 </head>
@@ -43,13 +43,22 @@
         
     <div id= "box5" class="box">
         <h2 id= "qAndA">Comments</h2> 
-        <input type= "text" id = "inputText1">
-        <button onclick="addComment()" id="commentButton" >Send</button>
+        <input type= "text" id = "inputText1" placeholder="Add comment">
+        <button onclick="addComment()" id="commentButton">Send</button>
         <ul id="commentSection"></ul>
         </div>
             
     <div id= "box6" class="box">
-        <h2 id= "newField">Add new field</h2> 
+        <h2 id= "deadlines">Calendar</h2> 
+        
+            <div id="calendar-container">
+            <div id="calendar-header">
+                <span id="calendar-month-year"></span>
+            </div>
+            <div id="calendar-dates">
+            </div>
+        </div>
+        
         </div>
     </div>
         
@@ -65,7 +74,7 @@
             <div id="movingCircle7" class="movingCircle"></div>
     </div>
     
-    <script src="js.js"></script>
+    <script src="resources.js"></script>
                 
 </body>
 

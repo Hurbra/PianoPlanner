@@ -281,9 +281,9 @@ body {
     color: #B6E29A;
 }
 
-#newField{
+#deadlines{
     position: absolute;
-    left: 25%;
+    left: 32%;
     top: -5%;
     color: #308193;
 }
@@ -403,3 +403,31 @@ body {
     }
 }
 
+
+#calendar-container{
+    position: absolute;
+    padding: 10px;
+    width: 175px;
+    height: 170px;
+    top: 20%;
+    left: 18%;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: Arial;
+    background-image: linear-gradient(#fff, #d3d3d3);
+}
+
+#calendar-container>div{
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+#calendar-month-year{
+    margin: 5px;
+}
+
+#calendar-dates>table>tr>td{
+    padding: 5px;
+}
