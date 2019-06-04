@@ -9,6 +9,7 @@
         <title>Piano</title>
         <link rel="stylesheet" href="myProjects.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da&display=swap" rel="stylesheet">
         
     </head>
     
@@ -16,8 +17,10 @@
         
         <div class="mainWrapper">
             <div class="logo">Piano</div>
-            <div class="loginBox"></div>
-            <div class="login">You are logged in</div>
+            <div class="loginBox">
+                <p class="login">You are logged in</p>
+            </div>
+            
             <div class="yourProjects">Your projects</div>
             <div class="buttonWrapper1">
             <button class="projectButtons" id="project1">Bandprosjekt</button>
@@ -28,22 +31,37 @@
             <button class="projectButtons" id="project4">Project 4</button>   
             </div>
             
-            <img src="Bilder/default_user_icon.png" class="user" id="user1">
-            <img src="Bilder/default_user_icon.png" class="user" id="user2">
-            <img src="Bilder/default_user_icon.png" class="user" id="user3">
-            <img src="Bilder/default_user_icon.png" class="user" id="user4">
-            <img src="Bilder/default_user_icon.png" class="user" id="user5">
-            <img src="Bilder/default_user_icon.png" class="user" id="user6">
+            <img src="Bilder/default_user_icon.png" class="user" id="user1" style="visibility:hidden">
+            <img src="Bilder/default_user_icon.png" class="user" id="user2" style="visibility:hidden">
+            <img src="Bilder/default_user_icon.png" class="user" id="user3" style="visibility:hidden">
+            <img src="Bilder/default_user_icon.png" class="user" id="user4" style="visibility:hidden">
+            <img src="Bilder/default_user_icon.png" class="user" id="user5" style="visibility:hidden">
+            <img src="Bilder/default_user_icon.png" class="user" id="user6" style="visibility:hidden">
             
+            
+            <div id="sliderContainer">
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" onclick="showPictures()">
                 <span class="slider round"></span>
             </label>
-            
             <div class="showUsers">Show users</div>
-            
+            </div>
+                
+                
+        </div>
+        
+        <div id="circleContainer">
+            <div id="movingCircle1" class="movingCircle"></div>
+            <div id="movingCircle2" class="movingCircle"></div>
+            <div id="movingCircle3" class="movingCircle"></div>
+            <div id="movingCircle4" class="movingCircle"></div>
+            <div id="movingCircle5" class="movingCircle"></div>
+            <div id="movingCircle6" class="movingCircle"></div>
+            <div id="movingCircle7" class="movingCircle"></div>
         </div>
     
+        
+        <script src="myProjects.js"></script>
     
     </body>
 
