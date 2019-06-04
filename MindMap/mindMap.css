@@ -285,7 +285,7 @@ body{
 
 @keyframes circleLeftToRight1{
     0%{
-        left: -700px;
+        left: -400px;
         top: 100px; 
     }100%{
         left: 110%;
@@ -295,7 +295,7 @@ body{
 
 @keyframes circleRightToLeft1{
     0%{
-        right: -700px;
+        right: -400px;
         top: -100px; 
     }100%{
         right: 110%;
@@ -305,7 +305,7 @@ body{
 
 @keyframes circleRightToLeft2{
     0%{
-        right: -700px;
+        right: -400px;
         bottom: -300px;
     }100%{
         right: 110%;
