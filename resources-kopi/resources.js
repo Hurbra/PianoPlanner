@@ -24,7 +24,7 @@ window.onload = function(){
     var d = new Date();
     var month_name = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     var month = d.getMonth();   //0-11
-    var year = d.getFullYear(); //2014
+    var year = d.getFullYear(); //2019
     var first_date = month_name[month] + " " + 1 + " " + year;
     //September 1 2014
     var tmp = new Date(first_date).toDateString();
