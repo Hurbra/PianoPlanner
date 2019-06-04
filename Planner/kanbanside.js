@@ -1,3 +1,88 @@
+/*
+addNewCard1.addEventListener("click", e => {
+		newCardFunction1();
+	}
+});
+
+ */
+
+let cardsArray = [];
+
+/*
+let btn = document.getElementById("addCardButton");
+if (btn ) {
+	btn.addEventListener("click", addBlankCard)
+}
+*/
+
+let id;
+
+function addBlankCard() {
+	console.log("I funksjon");
+	
+	if (cardBox.children.length < 1) {
+		console.log("I if");
+		let newCard = document.createElement("div");
+			
+		newCard.className = "card";
+		newCard.style.backgroundColor = "green";
+		newCard.style.height = "80%";
+		newCard.style.width = "90%";
+		newCard.style.top = "0%";
+		newCard.style.position = "absolute";
+		newCard.setAttribute('draggable', true);
+		newCard.style.display = "block";
+		console.log("div opprettet");
+		// for (let i = 1; i >= cardsArray; i++) {
+		// 	id = (i - 1);
+		// 	console.log("id i loop " + id);
+		// }
+		// console.log("id etter loop " + id);
+		let uniqId = 'id' + (new Date()).getTime();
+		
+		newCard.id = uniqId;
+		
+		let cardBox = document.getElementById("cardBox");
+		cardBox.appendChild(newCard);
+		
+		cardsArray.push(newCard);
+		console.log(newCard);
+		console.log("" + cardsArray);
+	}
+	else {
+		alert("Det finnes allerede et kort i boksen. Dra det over i en av bolkene, og trykk på knappen igjen.");
+	}
+	
+}
+
+if(cardsArray.length > 0) {
+	
+	let card = document.querySelector(".card");
+//let cardField = document.querySelectorAll(".cardField");
+	
+	card.addEventListener("dragstart", dragStart);
+	card.addEventListener("dragend", dragEnd);
+	
+	
+	function dragStart() {
+		console.log("start");
+		this.className += " hold";
+		setTimeout(() => (this.className = " invisible"), 0);
+	}
+	
+	function dragEnd() {
+		console.log("end");
+		this.className = "card";
+	}
+	
+}
+
+else {
+	console.log("");
+	console.log("Arrayet er tomt.");
+}
+/*
+
 
 //Blokk 1 ---
 function newCardFunction1() {
@@ -31,7 +116,7 @@ function newCardFunction1() {
 	
 	//Kort nr 3
 	if(newCardId === 3) {
-		document.getElementById("cardV3-H1").style.backgroundColor = "mintcream";
+		document.getElementById("cardV3-H1").style.backgroundColor = "blue";
 		document.getElementById("cardV3-H1").style.height = "150px";
 		document.getElementById("cardV3-H1").style.width = "250px";
 		document.getElementById("cardV3-H1").style.top = "315px";
@@ -40,6 +125,7 @@ function newCardFunction1() {
 		//det nye kortet under det forrige og forlenge bolken
 		document.getElementById("cardBlock1").style.height = "510px";
 		document.getElementById("addNewCard1").style.top = "470px";
+		document.getElementsById('cardV3-H1').setAttribute('draggable', true);
 		
 		// Get the reference node
 		var referenceNode = document.querySelector('#addNewCard1');
@@ -382,3 +468,5 @@ function newCardFunction4() {
 }
 
 //----------------------------------------------------------------
+
+ */

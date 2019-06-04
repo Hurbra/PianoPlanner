@@ -1,6 +1,7 @@
 
-body{
+html, body{
     background-color: lightgrey;
+    height: 100%;
 
 }
 
@@ -8,9 +9,28 @@ body{
 .container {
 
     position: relative;
-    height: 750px;
-    width: 1502px;
+    height: 100%;
+    width: 100%;
     z-index: 2;
+}
+
+#addCardButton {
+    height: 15%;
+    width: 20%;
+    background-color: black;
+    right: 1%;
+    bottom: 20%;
+    position: absolute;
+    border: solid grey 4px;
+}
+
+#cardBox {
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    height: 10%;
+    width: 20%;
+    background-color: red;
 }
 
 
@@ -18,15 +38,15 @@ body{
 
 /* Container for cardsTitle*/
 .cardsTitleContainer {
-    width: 260px;
-    height: 80px;
+    width: 20%;
+    height: 20%;
     position: absolute;
 }
 
 /* Tittel ovenfor kortene */
 .cardsTitle {
-    width: 250px;
-    height: 60px;
+    width: 15%;
+    height: 10%;
     position: absolute;
     z-index: 100;
 
@@ -34,23 +54,25 @@ body{
 
 /* Tittel 1 - Planned */
 #cardsTitleContainer1 {
-    top: 0;
+    top: 50%;
     left: 0;
     background-color: #AEC0B2;
+    position: absolute;
 }
 
 #cardsTitle1 {
-    top: 5px;
-    left: 5px;
+    top: 5%;
+    left: 0;
     background-color: mintcream;
+    position: absolute;
 }
 
 #planned {
-    bottom: 20px;
-    left: 55px;
+    bottom: 10%;
+    left: 10%;
     Color: #7f8f85;
     font-size: xx-large;
-    position: relative;
+    position: absolute;
 }
 
 /* Tittel 2 - Assistance */
@@ -58,12 +80,14 @@ body{
     top: 0;
     left: 300px;
     background-color: #AEC0B2;
+    position: absolute;
 }
 
 #cardsTitle2 {
     top: 5px;
     left: 5px;
     background-color: mintcream;
+    position: absolute;
 }
 
 #assistance {
@@ -71,7 +95,7 @@ body{
     left: 30px;
     Color: #7f8f85;
     font-size: xx-large;
-    position: relative;
+    position: absolute;
 }
 
 /* Tittel 3 - In progress */
@@ -79,12 +103,14 @@ body{
     top: 0;
     left: 600px;
     background-color: #AEC0B2;
+    position: absolute;
 }
 
 #cardsTitle3 {
     top: 5px;
     left: 5px;
     background-color: mintcream;
+    position: absolute;
 }
 
 #inProgress {
@@ -92,7 +118,7 @@ body{
     left: 25px;
     Color: #7f8f85;
     font-size: xx-large;
-    position: relative;
+    position: absolute;;
 }
 
 /* Tittel 4 - Finished */
@@ -113,7 +139,7 @@ body{
     left: 55px;
     Color: #7f8f85;
     font-size: xx-large;
-    position: relative;
+    position: absolute;
 }
 
 
@@ -157,6 +183,7 @@ body{
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
+    position: absolute;
 }
 
 /* Animasjoner til button addNewCard*/
@@ -189,14 +216,25 @@ body{
     height: 350px;
     width: 260px;
     background-color: #B5D9E8;
+
 }
 
+.hold {
+    border: solid white 4px;
+    position: absolute;
+}
+
+.invisible {
+    display: none;
+    position: absolute;
+}
 
 /* Kort Vertical 1 og 2, Horizontal */
 #cardV1-H1 {
     left: 5px;
     top: 5px;
-    background-color: mintcream;
+    background-color: red;
+
 }
 
 #cardV2-H1 {
@@ -205,6 +243,9 @@ body{
     background-color: mintcream;
 }
 
+.card:hover {
+    border: solid black 2px;
+}
 
 /* addNewCard1 - button */
 #addNewCard1:hover {
@@ -230,6 +271,7 @@ body{
     height: 350px;
     width: 260px;
     background-color: #FFA49A;
+
 }
 
 
@@ -251,8 +293,6 @@ body{
     top: 160px;
     background-color: mintcream;
 }
-
-
 
 
 /* addNewCard2 */
