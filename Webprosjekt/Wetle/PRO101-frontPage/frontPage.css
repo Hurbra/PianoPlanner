@@ -1,5 +1,5 @@
 
-
+/* definitions for the background */
 body{
     background-color: #8781bd;
     background-repeat: no-repeat;
@@ -9,6 +9,7 @@ body{
     margin: 0;
 }
 
+/* A wrapper so you can ajust the page without the elements changing place */
 .wrapper{
     position: relative;
     display: flex;
@@ -19,6 +20,7 @@ body{
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+/* Login writing and login box in background */
 .login{
     position: absolute;
     top: 15%;
@@ -44,6 +46,7 @@ body{
     border-radius: 20px;
 }
 
+/* page logo */
 .logo{
     position: absolute;
     top: 0px;
@@ -53,14 +56,14 @@ body{
     opacity: 0.5;
 }
 
+/* brackets on both sides of the buttons */
 #bracketRight{
     width: 60px;
     height: 170px;
     top: 325px;
     position: relative;
     left: 950px;
-    opacity: 0.5;
-    
+    opacity: 0.5; 
 }
 
 #bracketLeft{
@@ -71,9 +74,9 @@ body{
     left: 190px;
     opacity: 0.5;
     transform: rotate(180deg);
-    
 }
 
+/* new project and your project buttons */
 .btn{
     align-content: center;
     width: 300px;
@@ -93,6 +96,7 @@ body{
     overflow: hidden;
 }
 
+/* before and hover effects when you hover both buttons */
 .btn::before{
     content: "";
     position: absolute;
@@ -104,34 +108,19 @@ body{
     top: 0;
     border-radius: 50% 50% 0 0;
     z-index: -1;
-
-}
-
-
-#newProjectBtn::before{
-    top: 0;
-    border-radius: 0 0 50% 50%;
-}
-
-#projectBtn::before{
-    top: 0;
-    border-radius: 0 0 50% 50%;
 }
 
 #newProjectBtn::before, #projectBtn::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
     height: 180%;
 }
 
-#newProjectBtn:hover::before{
+#newProjectBtn:hover::before, #projectBtn:hover::before{
     height: 0%;
 }
 
-#projectBtn:hover::before{
-    height: 0%;
-}
-
-/* Adding floating circles to the background */
-
+/* Adding floating circles to the background. including animations */
 #circleContainer{
     position: absolute;
     top: 0;
@@ -144,8 +133,7 @@ body{
 .movingCircle{
     position: absolute;
     border-radius: 50%; 
-    background-color: #5046aa;
-    
+    background-color: #5046aa;  
 }
 
 #movingCircle1{
