@@ -17,18 +17,16 @@ body{
     width: 1325px;
     height: 768px;
     margin: auto;
-
 }
 
 /* page logo */
 .logo{
-    position: absolute;
-    left: 555px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 100px;
-    opacity: 0.5;
-    text-decoration: underline;
-    
+    position: absolute;   
+    width: 250px;
+    height: 250px;
+    top: 0px;
+    left: 520px;
+    opacity: 0.5;   
 }
 
 /* text below logo */
@@ -39,14 +37,13 @@ body{
     font-size: 70px;
     opacity: 0.5;
     text-decoration: underline;
-    top: 150px;
-    
+    top: 250px;  
 }
 
 /* box in right corner to show login information */
 .loginBox{
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 5%;
     border: 2px solid #F2F2E8;
     background-color: #F2F2E8;
@@ -73,17 +70,15 @@ body{
 /* wrapper for the buttons band project and surprice birthday */ 
 .buttonWrapper1{
     position: absolute;
-    top: 280px;
+    top: 400px;
     left: 345px;
 }
 
 /* wrapper for the buttons project 3 and project 4 */
 .buttonWrapper2{
     position: absolute;
-    top: 280px;
     left: 345px;
-    top: 430px;
-
+    top: 550px;
 }
 
 /* class for all the buttons */
@@ -97,6 +92,7 @@ body{
     font-size: 30px;
     border-radius: 20px;
     font-family: "Open Sans Condensed", sans-serif;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -112,26 +108,30 @@ body{
     z-index: 1;
 }
 
+#webProject{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 280px;
+    height: 130px;
+    border-radius: 20px;
+    opacity: 0.4; 
+    z-index: 1;
+}
+
+/* ID for project button classes */
+#project2{
+    opacity: 1;
+}
+
+#project3{
+    opacity: 1;
+}
+
 /* hover function for the buttons */ 
 .projectButtons:hover{
     box-shadow: 10px 15px #888888;
     background-color: #d0d0d0;
-    
-}
-
-
-#project1{
-    
-}
-
-#project2{
-    
-}
-
-#project3{
-    
-}
-#project4{
     
 }
 
@@ -140,37 +140,69 @@ body{
     position: absolute;
     width: 30px;
     height: 30px;
+    border-radius: 20px;
+    z-index: 10;
     
 }
 
 #user1{
     left: 360px;
-    top: 295px;
+    top: 415px;
 }
 
 #user2{
     left: 395px;
-    top: 295px;
+    top: 415px;
 }
 
 #user3{
     left: 430px;
-    top: 295px;
+    top: 415px;
 }
 
 #user4{
     left: 465px;
-    top: 295px;
+    top: 415px;
 }
 
 #user5{
     left: 500px;
-    top: 295px;
+    top: 415px;
 }
 
 #user6{
     left: 535px;
-    top: 295px;
+    top: 415px;
+}
+
+#ingrid{
+    left: 360px;
+    top: 565px;
+}
+
+#joakim{
+    left: 395px;
+    top: 565px;
+}
+
+#mats{
+    left: 430px;
+    top: 565px;
+}
+
+#simon{
+    left: 465px;
+    top: 565px;
+}
+
+#solveig{
+    left: 500px;
+    top: 565px;
+}
+
+#wetle{
+    left: 535px;
+    top: 565px;
 }
 
 /* The switch - the box around the slider */
@@ -378,22 +410,6 @@ input:checked + .slider:before {
         bottom: 400px; 
     }
 }
-
-/* hva gjør denne koden? */
-
-#removeDevInputButton{
-    position: absolute;
-    left: 40%;
-    bottom: 10px;
-}
-
-#removeDevInputButton2{
-    position: absolute;
-    left: 76%;
-    bottom: 10px;
-}
-
-
 
 
 
