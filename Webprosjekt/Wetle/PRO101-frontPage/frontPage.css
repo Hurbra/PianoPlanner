@@ -19,8 +19,6 @@ body{
     font-family: "Open Sans Condensed", sans-serif;
 }
 
-
-
 .login{
     position: absolute;
     top: 15%;
@@ -35,7 +33,7 @@ body{
 
 .loginBox{
     position: absolute;
-    top: 0px;
+    top: 30px;
     right: 5%;
     border: 2px solid #F2F2E8;
     background-color: #F2F2E8;
@@ -48,11 +46,10 @@ body{
 
 .logo{
     position: absolute;
-    left: 560px;
     top: 0px;
-    font-size: 80px;
-    font-family: "Open Sans Condensed", sans-serif;
-    text-decoration: underline;
+    width: 250px;
+    height: 250px;
+    left: 500px;
     opacity: 0.5;
 }
 
