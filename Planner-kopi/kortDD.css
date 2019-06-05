@@ -45,11 +45,11 @@ body
 }
 
 #sideBar{
-    position: absolute;
-    left: -1%;
+    position: fixed;
+    left: 0;
     top: 10%;
     width: 5%;
-    height: 30%;
+    height: 35%;
     background-color: #d0d0d0;
     border: 1px solid black; 
     border-radius: 10px; 
