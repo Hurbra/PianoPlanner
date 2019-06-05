@@ -17,11 +17,11 @@ body{
 
 #logo{
     position: absolute;
-    margin: 1px; 
-    text-align: center;
-    width: 100%;
-    font-size: 50px;
-    top: 5%;
+    top: -50px;
+    width: 250px;
+    height: 250px;
+    left: 530px;
+    opacity: 0.8;
 }
 
 /*setting the values for the box that holds all the info*/
