@@ -120,7 +120,7 @@ body{
     height: 0%;
 }
 
-/* Adding floating circles to the background. including animations */
+/* floating circles to the background. including animations */
 #circleContainer{
     position: absolute;
     top: 0;
