@@ -1,3 +1,5 @@
+
+/* defining the background of the page */
 body{
     background-color: #8781bd;
     background-repeat: no-repeat;
@@ -7,6 +9,8 @@ body{
     margin: 0;
 
 }
+
+/* A main wrapper to make the page ajustable */
 .mainWrapper{
     position: relative;
     display: flex;
@@ -16,6 +20,7 @@ body{
 
 }
 
+/* page logo */
 .logo{
     position: absolute;
     left: 555px;
@@ -26,6 +31,7 @@ body{
     
 }
 
+/* text below logo */
 .yourProjects{
     position: absolute;
     left: 35%;
@@ -37,6 +43,7 @@ body{
     
 }
 
+/* box in right corner to show login information */
 .loginBox{
     position: absolute;
     top: 0;
@@ -50,6 +57,7 @@ body{
     border-radius: 20px;
 }
 
+/* text in login box */ 
 .login{
     position: absolute;
     top: 20%;
@@ -62,12 +70,14 @@ body{
     z-index: 1;
 }
 
+/* wrapper for the buttons band project and surprice birthday */ 
 .buttonWrapper1{
     position: absolute;
     top: 280px;
     left: 345px;
 }
 
+/* wrapper for the buttons project 3 and project 4 */
 .buttonWrapper2{
     position: absolute;
     top: 280px;
@@ -76,6 +86,7 @@ body{
 
 }
 
+/* class for all the buttons */
 .projectButtons{
     width: 280px;
     height: 130px;
@@ -87,13 +98,27 @@ body{
     border-radius: 20px;
     font-family: "Open Sans Condensed", sans-serif;
     cursor: pointer;
-
 }
 
+/* Picture for party project button */
+#partyProject{
+    position: absolute;
+    top: 10px;
+    left: 314px;
+    width: 280px;
+    height: 130px;
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* hover function for the buttons */ 
 .projectButtons:hover{
-    box-shadow: 5px 10px #888888;
+    box-shadow: 10px 15px #888888;
+    background-color: #d0d0d0;
     
 }
+
 
 #project1{
     
@@ -110,6 +135,7 @@ body{
     
 }
 
+/* class and ID´s for users in projects */
 .user{
     position: absolute;
     width: 30px;
@@ -145,17 +171,6 @@ body{
 #user6{
     left: 535px;
     top: 295px;
-}
-
-#partyProject{
-    position: absolute;
-    top: 10px;
-    left: 314px;
-    width: 280px;
-    height: 130px;
-    border-radius: 20px;
-    opacity: 0.5;
-    z-index: 1;
 }
 
 /* The switch - the box around the slider */
@@ -364,6 +379,8 @@ input:checked + .slider:before {
     }
 }
 
+/* hva gjør denne koden? */
+
 #removeDevInputButton{
     position: absolute;
     left: 40%;
@@ -375,7 +392,6 @@ input:checked + .slider:before {
     left: 76%;
     bottom: 10px;
 }
-
 
 
 
