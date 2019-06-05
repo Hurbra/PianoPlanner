@@ -109,12 +109,9 @@ function addCard() {
 	nodeID.className = "pCard";
 	
 	let input = prompt("Write the title of the card: ");
-/*	blockSpecialChar();
-	
-	function blockSpecialChar(e) {
-		let k = e.keyCode;
-		return ((k > 64 && k < 91) || (k > 96 && k < 123) || k === 8   || (k >= 48 && k <= 57));
-	}*/
+
+    nodeP.style.fontSize = "x-large";
+    nodeID.style.fontSize = "small";
 	
 	if (input) {
 		if (input.match(/^[0-9a-zA-Z]+$/)) {
@@ -132,7 +129,7 @@ function addCard() {
 	}
 	
 	
-	let inputPlusTitle = "Title: " + input;
+	let inputPlusTitle = input;
 	
 	let textNode = document.createTextNode(inputPlusTitle);         // Create a text node
 	
@@ -181,7 +178,7 @@ function removeCard() {
 				return;
 			}
 		}
-		let deleteOrNot = prompt("Do you want to delete this card?" + "\nWrite yes or no").toLowerCase();
+		let deleteOrNot = prompt("Are you sure you want to delete this card?" + "\nWrite yes or no").toLowerCase();
 		
 		let cardIDOfCard = document.getElementById(deleteCardID);
 		let dropParent = cardIDOfCard.parentNode;
