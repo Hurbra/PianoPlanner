@@ -1,0 +1,271 @@
+@-ms-viewport{
+    width: device-width;
+}
+
+/* 
+Background colors visual start 
+*/
+#ideaHeader, #homeLogo, #usersHeader{
+    background-color: lightsteelblue;
+}
+/* 
+Background colors visual end
+*/
+
+/* 
+Header wrapper start
+*/
+#headerWrapper {
+    max-width: 2000px;
+    min-width: 1325px;
+    margin: 0 auto;
+    display: grid;
+    padding: 1%;
+    border-radius: 30px;
+    grid-template-columns: 6% 37% 57%;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+        "homeLogo activityHeader usersHeader";
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+    background-color: blue;
+}
+
+#homeLogo {
+    grid-area: homeLogo;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* Activity header start */
+#ideaHeader{
+    grid-area: activityHeader;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "idea-1 idea-4"
+        "idea-2 idea-5"
+        "idea-3 idea-6";
+    font-size: 23px;
+}
+
+#idea-1 {
+    grid-area: idea-1;
+}
+
+#idea-2 {
+    grid-area: idea-2;
+}
+
+#idea-3 {
+    grid-area: idea-3;
+}
+
+#idea-4 {
+    grid-area: idea-4;
+}
+
+#idea-5 {
+    grid-area: idea-5;
+}
+
+#idea-6 {
+    grid-area: idea-6;
+}
+
+.activityNumber {
+}
+
+/* Activity header end */
+
+/* Users header start */
+#usersHeader{
+    grid-area: usersHeader;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 10% repeat(6, 3fr 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+        "addUser user-1 userToDo-1 user-2 userToDo-2 user-3 userToDo-3 user-4 userToDo-4 user-5 userToDo-5 user-6 userToDo-6"
+
+        "addUser user-1 userAssistance-1 user-2 userAssistance-2 user-3 userAssistance-3 user-4 userAssistance-4 user-5 userAssistance-5 user-6 userAssistance-6"
+
+        "addUser user-1 userInProgress-1 user-2 userInProgress-2 user-3 userInProgress-3 user-4 userInProgress-4 user-5 userInProgress-5 user-6 userInProgress-6"
+
+        "addUser user-1 userFinished-1 user-2 userFinished-2 user-3 userFinished-3 user-4 userFinished-4 user-5 userFinished-5 user-6 userFinished-6";
+}
+
+#addUser {
+    grid-area: addUser;
+}
+
+.profilePictures {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    margin-top: 12.5%;
+    margin-left: 17%;
+}
+
+.toDoBlock {
+    height: 100%;
+    background-color: #b5d9e8;
+}
+
+.assistanceBlock {
+    height: 100%;
+    background-color: #ffa49a;
+}
+
+.inProgressBlock {
+    height: 100%;
+    background-color: #f8ffb9;
+}
+
+.finishedBlock {
+    height: 100%;
+    background-color: #aeecb6;
+}
+
+/* User 1 start */
+#user-1 {
+    grid-area: user-1;
+}
+
+#userToDo-1 {
+    grid-area: userToDo-1;
+}
+
+#userAssistance-1 {
+    grid-area: userAssistance-1;
+}
+
+#userInProgress-1 {
+    grid-area: userInProgress-1;
+}
+
+#userFinished-1 {
+    grid-area: userFinished-1;
+}
+/* User 1 end */
+
+/* User 2 start */
+#user-2 {
+    grid-area: user-2;
+}
+
+#userToDo-2 {
+    grid-area: userToDo-2;
+}
+
+#userAssistance-2 {
+    grid-area: userAssistance-2;
+}
+
+#userInProgress-2 {
+    grid-area: userInProgress-2;
+}
+
+#userFinished-2 {
+    grid-area: userFinished-2;
+}
+/* User 2 end */
+
+/* User 3 start */
+#user-3 {
+    grid-area: user-3;
+}
+
+#userToDo-3 {
+    grid-area: userToDo-3;
+}
+
+#userAssistance-3 {
+    grid-area: userAssistance-3;
+}
+
+#userInProgress-3 {
+    grid-area: userInProgress-3;
+}
+
+#userFinished-3 {
+    grid-area: userFinished-3;
+}
+/* User 3 end */
+
+/* User 4 start */
+#user-4 {
+    grid-area: user-4;
+}
+
+#userToDo-4 {
+    grid-area: userToDo-4;
+}
+
+#userAssistance-4 {
+    grid-area: userAssistance-4;
+}
+
+#userInProgress-4 {
+    grid-area: userInProgress-4;
+}
+
+#userFinished-4 {
+    grid-area: userFinished-4;
+}
+/* User 4 end */
+
+/* User 5 start */
+#user-5 {
+    grid-area: user-5;
+}
+
+#userToDo-5 {
+    grid-area: userToDo-5;
+}
+
+#userAssistance-5 {
+    grid-area: userAssistance-5;
+}
+
+#userInProgress-5 {
+    grid-area: userInProgress-5;
+}
+
+#userFinished-5 {
+    grid-area: userFinished-5;
+}
+/* User 5 end */
+
+/* User 6 start */
+#user-6  {
+    grid-area: user-6;
+}
+
+#userToDo-6 {
+    grid-area: userToDo-6;
+}
+
+#userAssistance-6 {
+    grid-area: userAssistance-6;
+}
+
+#userInProgress-6 {
+    grid-area: userInProgress-6;
+}
+
+#userFinished-6 {
+    grid-area: userFinished-6;
+}
+/* User 6 end */
+
+/* Users header end */
+/* 
+Header wrapper end
+*/
