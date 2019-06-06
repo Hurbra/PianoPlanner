@@ -27,7 +27,7 @@ body{
     width: 75%; 
     height: 75%; 
     left: 10%;
-    top: 22%; 
+    top: 20%; 
     background-color: #F2F2E8;
     border-radius: 20px; 
     opacity: 0.8;
@@ -39,7 +39,7 @@ body{
 #sideBar{
     position: fixed;
     left: 0;
-    top: 30%;
+    top: 24%;
     width: 5%;
     height: 35%;
     background-color: #d0d0d0;
