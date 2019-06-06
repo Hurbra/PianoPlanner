@@ -403,7 +403,7 @@ Header wrapper start
     padding: 1%;
     border-radius: 30px;
     grid-template-columns: 6% 37% 57%;
-    grid-template-rows: 100px;
+    grid-template-rows: 90px;
     grid-template-areas: 
         "homeLogo activityHeader usersHeader";
     font-family: 'Open Sans Condensed', sans-serif;
