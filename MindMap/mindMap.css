@@ -245,7 +245,7 @@ body{
     position: absolute;
     top: 0;
     width:100vw;
-    height: 70vw;
+    height: 60vw;
     overflow: hidden;
 }
 
@@ -397,11 +397,11 @@ Header wrapper start
     grid-template-areas: 
         "homeLogo activityHeader usersHeader";
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
     text-align: center;
     color: purple;
     background-color: #d8d8d8;
     margin-top: 1%;
+    border: 1px solid black;
 }
 
 #homeLogo {
@@ -459,6 +459,7 @@ Header wrapper start
 #usersHeader{
     grid-area: usersHeader;
     font-size: 20px;
+    font-weight: bold;
     display: grid;
     grid-template-columns: 10% repeat(6, 3fr 1fr);
     grid-template-rows: repeat(4, 25%);
