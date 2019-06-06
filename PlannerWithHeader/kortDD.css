@@ -242,6 +242,14 @@ body{
     cursor: pointer;
 }
 
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 60vw;
+    overflow: hidden;
+}
+
 .movingCircle{
     position: absolute;
     border-radius: 50%; 
