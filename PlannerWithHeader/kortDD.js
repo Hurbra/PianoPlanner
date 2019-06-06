@@ -7,6 +7,9 @@ function dragDrop() {
 	let len;
 	len = cards.length;
 	
+	
+	
+	
 	//get the collection of draggable items and add their draggable attribute
 	for ( i = 0; i < len; i++) {
 		
@@ -36,6 +39,7 @@ function dragDrop() {
 	document.addEventListener('dragover', function (e) {
 		if (card) {
 			e.preventDefault();
+			
 		}
 		
 	}, false);
@@ -51,6 +55,8 @@ function dragDrop() {
 			e.target.appendChild(card);
 			
 			e.preventDefault();
+			
+			
 		}
 		
 	}, false);
@@ -61,6 +67,7 @@ function dragDrop() {
 		card = null;
 		
 	}, false);
+	
 	
 }
 //-----
@@ -99,8 +106,8 @@ function addCard() {
 	card.setAttribute("draggable", true);
 	card.className = "card";
 	
-	// Dobbeltklikk på kortet fører til removeCard():
-	//card.setAttribute("ondblclick", "removeCard();");
+	
+	card.setAttribute("ondblclick", "setImportant();");
 	
 	
 	let nodeP = document.createElement("p");
@@ -108,10 +115,14 @@ function addCard() {
 	let nodeID = document.createElement("p");
 	nodeID.className = "pCard";
 	
+	//Endring
 	let input = prompt("Write the title of the card: ");
-
+	//Slutt pÂ endringer
+	
     nodeP.style.fontSize = "x-large";
+    nodeP.style.top = "-20% ";
     nodeID.style.fontSize = "small";
+    nodeID.style.top = "5%";
 	
 	if (input) {
 		if (input.match(/^[0-9a-zA-Z]+$/)) {
@@ -128,13 +139,44 @@ function addCard() {
 		dragDrop();
 	}
 	
+	//Endring
+	let textNode = document.createTextNode(input);         // Create a text node
 	
-	let inputPlusTitle = input;
+	let important = prompt("Is this task important? Write 'y' for yes or 'n' for no").toLowerCase();
+	if(important === "y" || important === "yes") {
+		textNode.nodeValue = (input + " (!)");
+	}
+	else if(important === "n" || important === "no"){
+		textNode.nodeValue = input;
+	}
+	else {
+		textNode.nodeValue = input;
+	}
 	
-	let textNode = document.createTextNode(inputPlusTitle);         // Create a text node
+	if (important) {
+		if (important.match(/^[0-9a-zA-Z]+$/)) {
+		}
+		/*else if (input === null) {
+			alert("You have to give the card a title. Try again.");
+			return;
+		}*/
+		else {
+			alert("You can only type in numbers and letters. Try again.");
+			counter--;
+			return;
+		}
+		dragDrop();
+		
+	}
 	
+	
+	// Slutt pÂ endring
+	
+	//Endring
 	let id = "card" + counter;
+	//Slutt pÂ endring
 	card.id = id;
+	
 	
 	//Add to array:
 	cardArray.push(card + "" + id);
@@ -154,7 +196,9 @@ function addCard() {
 	
 	//console.log(cardArray);
 	
+	getCount();
 	dragDrop();
+	
 	
 }
 //-----
@@ -178,12 +222,12 @@ function removeCard() {
 				return;
 			}
 		}
-		let deleteOrNot = prompt("Are you sure you want to delete this card?" + "\nWrite yes or no").toLowerCase();
+		let deleteOrNot = prompt("Do you want to delete this card?" + " Write 'y' for yes or 'n' for no").toLowerCase();
 		
 		let cardIDOfCard = document.getElementById(deleteCardID);
 		let dropParent = cardIDOfCard.parentNode;
 		
-		if (deleteOrNot === "yes") {
+		if (deleteOrNot === "y" || deleteOrNot === "yes") {
 			dropParent.removeChild(cardIDOfCard);
 			
 			//Delete from array
@@ -203,8 +247,36 @@ function removeCard() {
 		return;
 	}
 	
+	getCount();
 	dragDrop();
+	
 }
 //-----
 
+let parent1;
 
+function getCount(parent1) {
+	
+	parent1 = document.getElementById("drop1");
+	
+	var children = parent1.childNodes, cnt = 0;
+	for (var i = 0, len = children.length; i < len; i++) {
+		if (children[i].nodeType === 1) {
+			++cnt;
+		}
+	}
+	return (cnt);
+	console.log("log " + cnt);
+
+	
+	
+	
+	// var dropZone1 = document.getElementById('drop1');
+	// let drop1Children = dropZone1.children.length();
+	//
+	// if (drop1Children > 0) {
+		console.log(dropZone1 + " i drop1. if");
+	// }
+
+	alert("getCount ferdig");
+}

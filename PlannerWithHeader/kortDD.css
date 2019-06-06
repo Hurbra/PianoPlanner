@@ -395,7 +395,7 @@ Header wrapper start
 }
 
 .activityText {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .toDoBlock {
@@ -577,4 +577,11 @@ Header wrapper start
 
 #userFinished-6 {
     grid-area: userFinished-6;
+}
+
+#addUserImg{
+    position: absolute;
+    width: 3%;
+    left: 44.5%;
+    top: 40%;
 }
