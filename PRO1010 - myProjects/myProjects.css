@@ -299,7 +299,7 @@ input:checked + .slider:before {
     position: absolute;
     top: 0;
     width:100vw;
-    height: 70vw;
+    height: 60vw;
     overflow: hidden;
     z-index: -10;
 }
