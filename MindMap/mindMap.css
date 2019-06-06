@@ -150,6 +150,11 @@ body{
     background-color: #dddfe0;
 }
 
+#addButton1:hover, #addButton2:hover, #addButton3:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
 #mindHeaderText{
     position: absolute;
     width: 50%;
@@ -366,6 +371,11 @@ body{
     position: absolute;
     left: 76%;
     bottom: 10px;
+}
+
+#removeDevInputButton:hover, #removeDevInputButton2:hover{
+    background-color: #888;
+    cursor: pointer;
 }
 
 
@@ -667,5 +677,5 @@ Header wrapper end
     position: absolute;
     width: 3%;
     left: 44.5%;
-    top: 45%;
+    top: 53%;
 }
