@@ -44,7 +44,7 @@ body{
 .loginBox{
     position: absolute;
     top: 30px;
-    right: 5%;
+    right: 1%;
     border: 2px solid #F2F2E8;
     background-color: #F2F2E8;
     padding: 3px;
@@ -282,7 +282,7 @@ input:checked + .slider:before {
 
 #sliderContainer{
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 1%;
     border: 2px solid #F2F2E8;
     background-color: #F2F2E8;
