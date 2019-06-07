@@ -32,6 +32,7 @@ body{
     z-index: 100;
 }
 
+/*top header for box container*/
 #boxContainerHeader{
     position: absolute;
     width: 100%;
@@ -41,6 +42,7 @@ body{
     border-top-right-radius: 20px;
 }
 
+/*sidebar*/
 #sideBar{
     position: fixed;
     left: 0;
@@ -113,6 +115,7 @@ body{
 
 }
 
+/*The zone for dropping the cards*/
 .dropZoneText{
     position: absolute;
     width: 100px;
@@ -182,7 +185,7 @@ body{
     border: solid #000000 2px;
 }
 
-
+/*buttons for adding and removing cards*/
 #addCardButton {
     background-color: #f5fffa;
     border: solid #000000 2px;
@@ -248,6 +251,7 @@ body{
     background-color: #5046aa;
 }
 
+/*container for the moving circles in the background*/
 #movingCircle1{
     width: 100px; 
     height: 100px; 
@@ -309,7 +313,7 @@ body{
     animation-timing-function: ease-in-out;
 }
 
-
+/*animations for the moving circles*/
 @keyframes circleLeftToRight1{
     0%{
         left: -400px;

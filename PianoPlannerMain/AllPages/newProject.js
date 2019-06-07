@@ -1,3 +1,4 @@
+//function that adds text from the first input field to a list that displays the input
 function addLi(){
     var textValue = document.getElementById("textBox2").value,
         listNode = document.getElementById("listUsers"),
@@ -9,7 +10,7 @@ function addLi(){
         listNode.appendChild(liNode);
 }
 
-
+//function that adds text from the second input field to a list that displays the input
 function addName(){
     var nameValue = document.getElementById("textBox1").value,
         nameNode = document.getElementById("listedPname"),
@@ -21,7 +22,8 @@ function addName(){
     console.log(document.getElementById("listUsers").innerHTML)
 }
 
-
+//A function that lets the user press enter instead of "add" to add input to the list
+//also makes the inputfield blank after pressing enter
 var input = document.getElementById("textBox1");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
@@ -31,6 +33,8 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
+//A function that lets the user press enter instead of "add" to add input to the list
+//also makes the inputfield blank after pressing enter
 var input = document.getElementById("textBox2");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
@@ -40,7 +44,7 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
-
+//Remove buttons that removes all the input from user
 function removeAll1(){
     document.getElementById("listUsers").innerHTML = "";
 }
@@ -50,5 +54,5 @@ function removeAll(){
 }
 
 
-//localStorage.setItem("tBox", document.getElementById("listUsers").innerHTML);
+
 

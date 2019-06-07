@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang = "en">
     <head>
+        <!--- Linking stylesheet and fonts used -->
     <link rel=stylesheet type="text/css" href="mindMap.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da&display=swap" rel="stylesheet">
@@ -115,18 +116,19 @@
         
         <div id="mainContainer">
             
-            
+            <!--- Adding the sidebar with links to each site -->
             <div id="sideBar">
             <a href="toDo.html"><img src="images/todo.png" id="toDoImg"></a>
             <a href="mindMap.html"><img src="images/lamp.png" id="mindMapImg"></a>
             <a href="resources.html"><img src="images/files.png" id="resourcesImg"></a>
             </div>
             
-            
+            <!--- The box that contains the input fields and the output -->
             <div id="boxContainer">
                 <div id="mindHeader1">
                     <h2 id="mindHeaderText">Create idea</h2>
                     
+                    <!--input fields, also add buttons-->
                     <p id="input1InfoText" class="inputInfoText">1. Add the name for your idea</p>
                     <input type="text" id="newField1" placeholder="Add idea name">
                     <button onclick="addIdeaName()" id="addButton1">Add</button>
@@ -143,7 +145,7 @@
                     
                     
                 </div>
-                
+                <!--output fields, where the input is displayed, also remove buttons-->
                 <div id="outputIdeaName">
                     <p id="showIdeaName">
                     </p>
@@ -176,6 +178,7 @@
         
         </div>
         
+        <!--- the container for the moving circles in the background -->
         <div id="circleContainer">
             <div id="movingCircle1" class="movingCircle"></div>
             <div id="movingCircle2" class="movingCircle"></div>
