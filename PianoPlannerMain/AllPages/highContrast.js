@@ -81,22 +81,22 @@ function header() {
 
         var elements = document.getElementsByClassName("toDoBlock"); 
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "#6495db";
+            elements[i].style.backgroundColor = "#2466c1";
         }
     
         elements = document.getElementsByClassName("assistanceBlock");
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "#7f4faf";
+            elements[i].style.backgroundColor = "#d10202";
         }
     
         elements = document.getElementsByClassName("inProgressBlock");
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "#72af56";
+            elements[i].style.backgroundColor = "#7f4faf";
         }
     
         elements = document.getElementsByClassName("finishedBlock"); 
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "#8e7840";
+            elements[i].style.backgroundColor = "#118706";
         }
 
     } else {
@@ -174,21 +174,21 @@ function toDoPage() {
         document.getElementById("buttonRemove").style.color = "#ffc40d";
         document.getElementById("removeCardInfo").style.color = "#000000";
 
-        document.getElementById("dropZoneText1").style.backgroundColor = "#6495db";
+        document.getElementById("dropZoneText1").style.backgroundColor = "#2466c1";
         document.getElementById("dropZoneText1").style.color = "#ffc40d";
-        document.getElementById("drop1").style.backgroundColor = "#6495db";
+        document.getElementById("drop1").style.backgroundColor = "#2466c1";
 
-        document.getElementById("dropZoneText2").style.backgroundColor = "#7f4faf";
+        document.getElementById("dropZoneText2").style.backgroundColor = "#d10202";
         document.getElementById("dropZoneText2").style.color = "#ffc40d";
-        document.getElementById("drop2").style.backgroundColor = "#7f4faf";
+        document.getElementById("drop2").style.backgroundColor = "#d10202";
 
-        document.getElementById("dropZoneText3").style.backgroundColor = "#72af56";
+        document.getElementById("dropZoneText3").style.backgroundColor = "#7f4faf";
         document.getElementById("dropZoneText3").style.color = "#ffc40d";
-        document.getElementById("drop3").style.backgroundColor = "#72af56";
+        document.getElementById("drop3").style.backgroundColor = "#7f4faf";
 
-        document.getElementById("dropZoneText4").style.backgroundColor = "#8e7840";
+        document.getElementById("dropZoneText4").style.backgroundColor = "#118706";
         document.getElementById("dropZoneText4").style.color = "#ffc40d";
-        document.getElementById("drop4").style.backgroundColor = "#8e7840";
+        document.getElementById("drop4").style.backgroundColor = "#118706";
     } else {
 
         document.getElementById("boxContainerHeader").style.backgroundColor = "#000000";
@@ -405,56 +405,4 @@ function resourcesPage() {
 }
 /* 
  Resources page end
-*/
-
-
-/* 
- Frontpage start
-*/
-function frontpage() {
-
-    if (document.getElementById("isChecked").checked) {
-
-    } else {
-
-    }
-}
-/* 
- Frontpage end
-*/
-
-
-/* 
- My projects page start
-*/
-function myProjects() {
-
-    if (document.getElementById("isChecked").checked) {
-
-        document.getElementById("logo").src="images/logo_hvitskrift-kopi.png";
-
-    } else {
-
-        document.getElementById("logo"). src="Images/logo_lillaskrift.png"
-
-    }
-}
-/* 
- My projects page end
-*/
-
-/* 
- New project page start
-*/
-function newProject() {
-
-    if (document.getElementById("isChecked").checked) {
-        
-
-    } else {
-
-    }
-}
-/* 
- New project page end
 */
