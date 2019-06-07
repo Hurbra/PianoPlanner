@@ -111,21 +111,26 @@
     
     <!------------------------------------------------->
     
+    <!--Main container start-->
     <div id= "mainContainer">
         
+        <!-- Sidebar start-->
         <div id="sideBar">
             <a href="toDo.html"><img src="images/todo.png" id="toDoImg"></a>
             <a href="mindMap.html"><img src="images/lamp.png" id="mindMapImg"></a>
             <a href="resources.html"><img src="images/files.png" id="resourcesImg"></a>
         </div>
         
+        <!-- Box container start-->
         <div id="boxContainer">
+            <!-- Project description box start-->
             <div id= "box1" class="box">
                 <h2 id= "proInfoTitle">Project Description</h2>
                 <button id= "addDescription">Save</button>
                 <textarea id= "proInfoTextBox" placeholder="Write the project information here..."></textarea>
             </div>
                 
+            <!-- Code samples box start-->
             <div id= "box2" class="box">
                 <h2 id= "fileUploadTitle">Code samples</h2>
         
@@ -133,18 +138,21 @@
                 <span id="fileText1">No file chosen</span>
             </div>
                 
+            <!-- Color templates box start-->  
             <div id= "box3" class="box">
                 <h2 id= "colorTemp">Color Template</h2> 
                 <button type="button" id="customButton2">Upload file</button>   
                 <span id="fileText2">No file chosen</span>   
             </div>
                 
+            <!-- Project log box start--> 
             <div id= "box4" class="box">
                 <h2 id= "logTitle">Log</h2>
                 <button id= "addLog">Save</button>
                 <textarea id= "logTextBox" placeholder="Log your progress here..."></textarea>
             </div>
                 
+            <!-- Comment section box start-->  
             <div id= "box5" class="box">
                 <h2 id= "qAndA">Comments</h2> 
                 <input type= "text" id = "inputText1" placeholder="Add comment">
@@ -152,6 +160,7 @@
                 <ul id="commentSection"></ul>
                 </div>
                     
+            <!-- Calender box start--> 
             <div id= "box6" class="box">
                 <h2 id= "calendarHeadline">Calendar</h2> 
                     <div id="calendar-container">
@@ -167,6 +176,7 @@
                 
             </div>
     
+    <!-- Background animation start-->   
     <div id="circleContainer">
             <div id="movingCircle1" class="movingCircle"></div>
             <div id="movingCircle2" class="movingCircle"></div>
